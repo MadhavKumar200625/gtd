@@ -119,7 +119,7 @@ const Header = () => {
                           <ul className="mt-3 text-[15px]">
                             <li>
                               <a
-                                href="https://gtdservice.com/agribusiness"
+                                href="/agribusiness"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Agribusiness
@@ -127,7 +127,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/automative"
+                                href="/automative"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Automotive
@@ -135,7 +135,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/energy"
+                                href="/energy"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Energy Sector
@@ -143,7 +143,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/research-and-consulting"
+                                href="/research-and-consulting"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Research & Consulting
@@ -151,7 +151,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/insurance-companies"
+                                href="/insurance-companies"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Insurance Companies
@@ -159,7 +159,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/finance"
+                                href="/finance"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Financial Sector
@@ -167,7 +167,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/academic-and-education"
+                                href="/academic-and-education"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Academic & Education
@@ -179,7 +179,7 @@ const Header = () => {
                           <ul className="mt-3 text-[15px]">
                             <li>
                               <a
-                                href="https://gtdservice.com/corporation"
+                                href="/corporation"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Corporation
@@ -187,7 +187,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/asset-management"
+                                href="/asset-management"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Asset Management
@@ -195,7 +195,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/government-agencies"
+                                href="/government-agencies"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Government Agencies
@@ -203,7 +203,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/law-firms"
+                                href="/law-firms"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Law Firms
@@ -211,7 +211,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/construction"
+                                href="/construction"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Construction
@@ -219,7 +219,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/chemical"
+                                href="/chemical"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Chemical
@@ -227,7 +227,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/aerospace-and-defence"
+                                href="/aerospace-and-defence"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Aerospace & Defence
@@ -239,7 +239,7 @@ const Header = () => {
                           <ul className="mt-3 text-[15px]">
                             <li>
                               <a
-                                href="https://gtdservice.com/importers"
+                                href="/importers"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Importers
@@ -255,7 +255,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/supply-chain-and-logistics"
+                                href="/supply-chain-and-logistics"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Supply Chain & Logistics
@@ -263,7 +263,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/it-and-consulting"
+                                href="/it-and-consulting"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 IT & Consulting
@@ -271,7 +271,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/retail"
+                                href="/retail"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Retail
@@ -279,7 +279,7 @@ const Header = () => {
                             </li>
                             <li>
                               <a
-                                href="https://gtdservice.com/sales-and-marketing"
+                                href="/sales-and-marketing"
                                 className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900"
                               >
                                 Sales & Marketing
@@ -480,7 +480,7 @@ const Mobileheader = ({ setMenuShow }) => {
                       <ul className="mb-0 text-[15px]">
                         <li>
                           <a
-                            href="https://gtdservice.com/agribusiness"
+                            href="/agribusiness"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Agribusiness
@@ -488,7 +488,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/automative"
+                            href="/automative"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Automotive
@@ -496,7 +496,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/energy"
+                            href="/energy"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Energy Sector
@@ -504,7 +504,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/research-and-consulting"
+                            href="/research-and-consulting"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Research & Consulting
@@ -512,7 +512,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/insurance-companies"
+                            href="/insurance-companies"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Insurance Companies
@@ -520,7 +520,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/finance"
+                            href="/finance"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Financial Sector
@@ -528,7 +528,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/academic-and-education"
+                            href="/academic-and-education"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Academic & Education
@@ -540,7 +540,7 @@ const Mobileheader = ({ setMenuShow }) => {
                       <ul className="mb-0 text-[15px]">
                         <li>
                           <a
-                            href="https://gtdservice.com/corporation"
+                            href="/corporation"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Corporation
@@ -548,7 +548,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/asset-management"
+                            href="/asset-management"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Asset Management
@@ -556,7 +556,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/government-agencies"
+                            href="/government-agencies"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Government Agencies
@@ -564,7 +564,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/law-firms"
+                            href="/law-firms"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Law Firms
@@ -572,7 +572,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/construction"
+                            href="/construction"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Construction
@@ -580,7 +580,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/chemical"
+                            href="/chemical"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Chemical
@@ -588,7 +588,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/aerospace-and-defence"
+                            href="/aerospace-and-defence"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Aerospace & Defence
@@ -600,7 +600,7 @@ const Mobileheader = ({ setMenuShow }) => {
                       <ul className="mb-0 text-[15px]">
                         <li>
                           <a
-                            href="https://gtdservice.com/importers"
+                            href="/importers"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Importers
@@ -608,7 +608,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/exporters"
+                            href="/exporters"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Exporters
@@ -616,7 +616,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/supply-chain-and-logistics"
+                            href="/supply-chain-and-logistics"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Supply Chain & Logistics
@@ -624,7 +624,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/it-and-consulting"
+                            href="/it-and-consulting"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             IT & Consulting
@@ -632,7 +632,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/retail"
+                            href="/retail"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Retail
@@ -640,7 +640,7 @@ const Mobileheader = ({ setMenuShow }) => {
                         </li>
                         <li>
                           <a
-                            href="https://gtdservice.com/sales-and-marketing"
+                            href="/sales-and-marketing"
                             className="block p-2 -mx-2 rounded-lg bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 mb-2 transition ease-in-out duration-300 text-gray-500 font-semibold hover:text-blue-900" onClick={() => setMenuShow(false)}
                           >
                             Sales & Marketing

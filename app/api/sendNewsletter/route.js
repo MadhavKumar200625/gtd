@@ -56,7 +56,7 @@ export async function POST(req) {
     <p>If you have any questions, just reply to this email — we’d love to hear from you.</p>
     <br />
     <p>Stay tuned and welcome aboard!</p>
-    <p style="margin-top: 30px;">Warm regards,<br /><strong>GTD Solutions</strong><br /><a href="https://gtdservice.com" style="color: #1a73e8; text-decoration: none;">gtdservice.com</a></p>
+    <p style="margin-top: 30px;">Warm regards,<br /><strong>GTD Solutions</strong><br /><a href="" style="color: #1a73e8; text-decoration: none;">gtdservice.com</a></p>
   </div>
 `,
         };

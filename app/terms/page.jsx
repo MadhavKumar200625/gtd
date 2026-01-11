@@ -44,7 +44,7 @@ const page = () => {
             </h2>
             <p className="text-base text-gray-600 pb-3">
              Find the terms and conditions of service that
-             apply to all visitors of the <a href="https://gtdservice.com" target="_blank"><b>gtdservice.com</b></a> website 
+             apply to all visitors of the <a href="" target="_blank"><b>gtdservice.com</b></a> website 
              and associated web pages. By accessing this website, 
              you accept the following terms and conditions:
             </p>

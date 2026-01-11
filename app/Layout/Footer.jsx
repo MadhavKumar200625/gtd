@@ -604,7 +604,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:flex mt-10 justify-between items-center pt-5 border-t border-gray-500">
-            <a className="text-gray-400 mb-4 md:mb-0 block" href="https://gtdservice.com/sitemap/sitemap.xml">
+            <a className="text-gray-400 mb-4 md:mb-0 block" href="/sitemap/sitemap.xml">
               XML Site Map
             </a>
             <p className="text-gray-400">

@@ -82,7 +82,7 @@ const page = () => {
             Global Import Export Data of 200+ countries
           </h1>
           <p className="mb-2 text-justify text-base font-normal text-dark">
-            GTD Services being amongst the best <a href="https://gtdservice.com"><b>Global import-export data trade providers</b></a> provides the latest updated global import-export data of over 200+ countries. Expand your reach to the most diverse markets. Drive high-quality ROI leads from all over the globe and through global trade data and import-export platforms. Find actionable insights over international import-export trade data by country, quantity, value, suppliers, buyers, and port volumes. Importers and exporters keep an eye on international buyers and competitors' shipment data activities.
+            GTD Services being amongst the best <a href=""><b>Global import-export data trade providers</b></a> provides the latest updated global import-export data of over 200+ countries. Expand your reach to the most diverse markets. Drive high-quality ROI leads from all over the globe and through global trade data and import-export platforms. Find actionable insights over international import-export trade data by country, quantity, value, suppliers, buyers, and port volumes. Importers and exporters keep an eye on international buyers and competitors' shipment data activities.
 
           </p>
           <h6 className="text-lg font-bold text-blue-600 mb-3">
