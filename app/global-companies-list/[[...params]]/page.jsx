@@ -3,6 +3,7 @@
 import ClientPage from './ClientPage';
 
 export async function generateMetadata({params}) {
+  params = await params
     //console.log("Params:", context.params); // Check what it gives
     const baseUrl = "https://gtdservice.com/global-companies-list";
     //const segments = params?.params ?? [];

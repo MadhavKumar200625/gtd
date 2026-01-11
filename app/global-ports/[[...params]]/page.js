@@ -3,6 +3,7 @@
 import PortPage from './PortPage';  
 
 export async function generateMetadata({ params }) {
+  params = await params
   const [country = "", letter = ""] = params.params || [];
 
   const formattedCountry = country.replaceAll('-', ' ');

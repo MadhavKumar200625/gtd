@@ -3,6 +3,7 @@
 import ClientCompanyProfile from "./ClientCompanyProfile";
 
 export async function generateMetadata({ params }) {
+  params = await params
   //const { country, company } = params;
   const country = decodeURIComponent(params.country);
   const company = decodeURIComponent(params.company);
@@ -53,6 +54,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function Page({ params }) {
+export default async function Page({ params }) {
+  params = await params
   return <ClientCompanyProfile country={params.country} company={params.company} />;
 }

@@ -10,7 +10,7 @@ import "flag-icons/css/flag-icons.min.css";
 
 
 export async function generateMetadata({ params }) {
-  const { id } = params;
+  const { id } = await params;
   
   const countryName = formatCountryName(id);
 
@@ -71,6 +71,7 @@ function parseValue(value) {
 }
 
 export default async function Page({ params }) {
+  params = await params
   const country = formatCountryName(params.id);
   const data = await fetchCountryData(country);
   const meta = await getPageMeta_import(country);

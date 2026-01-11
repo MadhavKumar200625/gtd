@@ -1,6 +1,7 @@
 import ClientPage from "./ClientPage";
 
 export async function generateMetadata({ params }) {
+  params = await params
   const [country = '', port = ''] = params.params || [];
 
   const title = `${port.replaceAll('-', ' ')} - Port Details | GTD Service`;
@@ -49,7 +50,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function Page({ params }) {
+export default async function Page({ params }) {
+    params = await params
   const [country = '', port = ''] = params.params || [];
 
   return <ClientPage country={country} port={port} />;

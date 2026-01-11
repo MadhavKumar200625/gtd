@@ -2,7 +2,7 @@ import ClientComponent from './ClientComponent';
 import { getPageMeta_export } from '@/lib/api';
 
 export async function generateMetadata({ params }) {
-  const { id } = params;
+  const { id } = await params;
 
   let id_a = '';
   if (id && id.length > 3) {
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function Page({ params }) {
-
+export default async function Page({ params }) {
+  params = await params
   return <ClientComponent id={params.id}  />;
 }

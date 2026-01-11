@@ -3,6 +3,7 @@
 import ClientPage from './ClientPage';
 
 export async function generateMetadata({params }) {
+  params = await params
  const title = `Company Profile Removal Form | GTD Solutions LLC - GTD Service`;
   
  const decodedCompany = decodeURIComponent(params.company || "");

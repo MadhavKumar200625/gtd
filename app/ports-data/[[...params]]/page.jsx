@@ -3,6 +3,7 @@
 import ClientPage from './ClientPage';
 
 export async function generateMetadata({ params }) {
+    params = await params
   const [country = '', port = ''] = params.params || [];
 
 

@@ -77,6 +77,7 @@ function decodeEncryptedText(encryptedText) {
 // }
 
 export async function generateMetadata({ params }) {
+      params = await params
   const { country, type, encryptedText = [] } = params || {};
   //const { country, type, productA, hscodeA, countryinA, portA  } = params || {};
 
