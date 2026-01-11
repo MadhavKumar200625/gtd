@@ -37,14 +37,14 @@ const page = () => {
       aboutHeading: "The IT and Consulting sector is an integral catalyst for innovation, enabling companies in all industries to maximize operations, enhance customer experiences, and remain competitive in the digitally expanding world. From management consulting to software development, IT services and consulting form the foundation of business results."
     },
     about: {
-      aboutIMG: "./images/It-and-consulting1.jpg",
+      aboutIMG: "/images/It-and-consulting1.jpg",
       aboutHeading:
         "Revolutionize your business with our Trade Intelligence Platform",
       aboutPera:
         "Being ahead in this ever-evolving sector demands continuous market intelligence, knowledge of emerging technologies, and an intimate tie to international trade networks.",
     },
     insights: {
-      insightIMG: "./images/IT-AND-CONSULTING 2.webp",
+      insightIMG: "/images/IT-AND-CONSULTING 2.webp",
       insightHeading:
         "Gain Further Understanding of the International Market with Our Business Intelligence Reports",
       insightPera:

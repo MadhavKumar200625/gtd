@@ -37,14 +37,14 @@ const page = () => {
       aboutHeading: "The supply chain and logistics sector is critical to international trade because it ensures that goods and services are delivered on time from producers to buyers. It is a highly interconnected system encompassing procurement storage transport and delivery, all of which must be handled seamlessly to serve customer needs and ensure business competitiveness."
     },
     about: {
-      aboutIMG: "./images/Supply-chain-and-logistics1.webp",
+      aboutIMG: "/images/Supply-chain-and-logistics1.webp",
       aboutHeading:
         "Competition in Supply Chain and Logistics Market",
       aboutPera:
         "As international trade records are undergoing accelerated transformation, consumer preferences are changing, and technology is playing an increasingly significant role. Businesses have to keep optimising their supply chain operations to remain competitive.",
     },
     insights: {
-      insightIMG: "./images/Supply chain 2.webp",
+      insightIMG: "/images/Supply chain 2.webp",
       insightHeading:
         "Grasp New Opportunities in the International Market with Practical Insights",
       insightPera:

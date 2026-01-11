@@ -37,13 +37,13 @@ const page = () => {
       aboutHeading: "GTD Service provides an effective market intelligence platform customised for the chemical sector. It gives vital information about the international chemical market such as major imports and exports trading nations and leading chemical firms. Using in-depth business reports, chemical firms can remain ahead of market trend innovations and technology developments."
     },
     about: {
-      aboutIMG: "./images/Chemical 1.webp",
+      aboutIMG: "/images/Chemical 1.webp",
       aboutHeading: "Top Market Intelligence Solutions for the Chemicals Industry",
       aboutPera:
         "The platform assists companies in streamlining decision-making by providing accurate information on market demands, pricing policies, and manufacturing predictions, helping them identify profitable business opportunities and improve their growth expectations in the global chemical industry.",
     },
     insights: {
-      insightIMG: "./images/CHEMICAL 2.webp",
+      insightIMG: "/images/CHEMICAL 2.webp",
       insightHeading:
         "Take Your Business Global with Actionable Insights from Global Trade Data Service",
       insightPera:

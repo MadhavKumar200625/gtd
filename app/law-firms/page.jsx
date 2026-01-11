@@ -37,14 +37,14 @@ const page = () => {
       aboutHeading: "GTD Service provides end-to-end trade intelligence solutions for legal firms and attorneys. Our system provides precise real-time global market trends, historical transaction records, and in-depth trade data reports that aid legal research dispute settlement and strategic decision-making."
     },
     about: {
-      aboutIMG: "./images/LAW 1.webp",
+      aboutIMG: "/images/LAW 1.webp",
       aboutHeading:
         "Liberating Trade Data Solutions for Legal Firms and Attorneys",
       aboutPera:
         "With historical trade data at hand, legal firms can simplify their legal procedures, build successful case plans, and expand their client service.",
     },
     insights: {
-      insightIMG: "./images/law 2.webp",
+      insightIMG: "/images/law 2.webp",
       insightHeading:
         "Improve Your Legal Research with Credible Global Trade Statistics",
       insightPera:

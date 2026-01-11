@@ -22,7 +22,7 @@ const CTA = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 mb-6 md:mb-0">
-              <img src="./images/girlwithlaptFop.png" alt="" />
+              <img src="/images/girlwithlaptFop.png" alt="" />
             </div>
           </div>
         </div>

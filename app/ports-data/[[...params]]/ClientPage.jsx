@@ -101,7 +101,7 @@ export default function ClientPage({ Country }) {
         <>
             <section className="flex pt-10 items-center overflow-hidden relative bg-gradient-to-br from-white via-emerald-100 to-blue-100 bg-gradient-45 bg-opacity-50">
                 <div className="absolute -top-2/4 w-full h-screen z-0 opacity-10">
-                    <img src="../../images/ports.webp" className="w-full" alt="" />
+                    <img src=".././images/ports.webp" className="w-full" alt="" />
                 </div>
                 <div className="py-8 mx-auto container px-3 lg:pt-16 lg:pb-10 z-10 relative">
                     <h1 className="mb-4 text-3xl font-bold tracking-tight leading-none text-dark md:text-3xl mt-6 lg:text-4xl">
@@ -220,7 +220,7 @@ export default function ClientPage({ Country }) {
                                     >
                                         <div id={`div3_${index}`} className="block">
                                             <img
-                                                src="../images/icons/anchor-icon.svg"
+                                                src="./images/icons/anchor-icon.svg"
                                                 className="w-6"
                                                 alt=""
                                             />

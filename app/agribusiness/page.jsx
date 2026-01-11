@@ -39,14 +39,14 @@ const page = () => {
         "The agribusiness industry market is an arena of risk and uncertainty. GTD Service offers data on expert market intelligence solutions that allow you to assess financial risks in the agriculture industry and the potential of your agribusiness with the most recent data solutions that maximize operations. ",
     },
     about: {
-      aboutIMG: "./images/AGRIBUSINESS 2.webp" ,
+      aboutIMG: "/images/AGRIBUSINESS 2.webp" ,
       aboutHeading: "Unlock Agribusiness Success with Expert Data Solutions",
       aboutPera: "Global trade data service enhances decision-making and increases profitability, as well as provides real-time insights to maximize crop yields and resource management. Import-export trade statistics and innovative technologies help optimize supply chains and eliminate waste, and your agribusiness will excel in a competitive economy.",
 
     },
     
     insights: {
-      insightIMG: "./images/Agribusiness2.webp",
+      insightIMG: "/images/Agribusiness2.webp",
       insightHeading:
         "Gain Comprehensive Insights into the Global Agribusiness Market",
       insightPera:

@@ -17,7 +17,7 @@ const page = () => {
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-blue-100 via-indigo-100 to-yellow-100 bg-gradient-45 bg-opacity-50">
         <div className="absolute top-0 w-full h-screen z-0 opacity-20">
-          <img src="./images/dots.png" className="w-full" alt="" />
+          <img src="/images/dots.png" className="w-full" alt="" />
         </div>
         <div className="py-8 mx-auto container px-3 lg:py-15 z-10 relative">
           <nav className="flex pt-20" aria-label="Breadcrumb">
@@ -140,7 +140,7 @@ const page = () => {
             <div className="order-1 lg:order-2">
               <div className="rounded-lg overflow-hidden  bg-white">
                 <img
-                  src="./images/Importers1.webp"
+                  src="/images/Importers1.webp"
                   className="w-full rounded-lg"
                   alt="Importers"
                   title="Importers"
@@ -288,7 +288,7 @@ const page = () => {
             <div>
               <div className="rounded-lg overflow-hidde">
                 <img
-                  src="./images/IMPORTER 2.webp"
+                  src="/images/IMPORTER 2.webp"
                   className="w-full rounded-lg"
                   alt="Global Import data"
                   title="Global Import data"
@@ -304,7 +304,7 @@ const page = () => {
         <div className="container mx-auto px-4 md:px-0 ">
           <div className="grid md:grid-cols-4 items-center gap-8">
             <div className="mb-6 md:mb-0">
-              <img src="./images/phone_mockup.png" alt="Get Access to the Leading Suppliers" title="Get Access to the Leading Suppliers"/>
+              <img src="/images/phone_mockup.png" alt="Get Access to the Leading Suppliers" title="Get Access to the Leading Suppliers"/>
             </div>
             <div className="col-span-3">
               <h4 className="text-2xl md:text-4xl font-bold leading-snug text-white">
@@ -355,7 +355,7 @@ const page = () => {
           <div className="md:grid grid-cols-3 mt-10 gap-6">
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/Exporters1.webp"
+                src="/images/Exporters1.webp"
                 className="w-100 rounded-xl"
                 alt="Exporters"
                 title="Exporters"
@@ -390,7 +390,7 @@ const page = () => {
             </div>
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/Importers1.webp"
+                src="/images/Importers1.webp"
                 className="w-100 rounded-xl"
                 alt="Importers"
                 title="Importers"
@@ -425,7 +425,7 @@ const page = () => {
             </div>
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/AUTOMOTIVE .webp"
+                src="/images/AUTOMOTIVE .webp"
                 className="w-100 rounded-xl"
                 alt="Automotive"
                 title="Automotive"

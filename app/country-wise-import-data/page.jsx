@@ -470,7 +470,7 @@ const Page = () => {
               <div className="p-3 flex bg-black bg-opacity-15 rounded-full gap-5 items-center mb-3">
                 <div className="bg-emerald-400 border-4 border-gray-50 border-opacity-30 flex justify-center items-center w-24 h-24 rounded-full">
                   <img
-                    src="./images/icons/shipping.svg"
+                    src="/images/icons/shipping.svg"
                     className="w-16"
                     alt=""
                   />
@@ -483,7 +483,7 @@ const Page = () => {
               <div className="p-3 flex bg-black bg-opacity-15 rounded-full gap-5 items-center mb-3">
                 <div className="bg-emerald-400 border-4 border-gray-50 border-opacity-30 flex justify-center items-center w-24 h-24 rounded-full">
                   <img
-                    src="./images/icons/import.svg"
+                    src="/images/icons/import.svg"
                     className="w-12"
                     alt=""
                   />
@@ -498,7 +498,7 @@ const Page = () => {
               <div className="p-3 flex bg-black bg-opacity-15 rounded-full gap-5 items-center">
                 <div className="bg-emerald-400 border-4 border-gray-50 border-opacity-30 flex justify-center items-center w-24 h-24 rounded-full">
                   <img
-                    src="./images/icons/Buyers.svg"
+                    src="/images/icons/Buyers.svg"
                     className="w-14"
                     alt=""
                   />
@@ -523,7 +523,7 @@ const Page = () => {
               <div className="p-3 flex bg-black bg-opacity-15 rounded-full gap-5 items-center mb-3">
                 <div className="bg-emerald-400 border-4 border-gray-50 border-opacity-30 flex justify-center items-center w-24 h-24 rounded-full">
                   <img
-                    src="./images/icons/shipping.svg"
+                    src="/images/icons/shipping.svg"
                     className="w-16"
                     alt=""
                   />
@@ -536,7 +536,7 @@ const Page = () => {
               <div className="p-3 flex bg-black bg-opacity-15 rounded-full gap-5 items-center mb-3">
                 <div className="bg-emerald-400 border-4 border-gray-50 border-opacity-30 flex justify-center items-center w-24 h-24 rounded-full">
                   <img
-                    src="./images/icons/import.svg"
+                    src="/images/icons/import.svg"
                     className="w-12"
                     alt=""
                   />
@@ -551,7 +551,7 @@ const Page = () => {
               <div className="p-3 flex bg-black bg-opacity-15 rounded-full gap-5 items-center">
                 <div className="bg-emerald-400 border-4 border-gray-50 border-opacity-30 flex justify-center items-center w-24 h-24 rounded-full">
                   <img
-                    src="./images/icons/Buyers.svg"
+                    src="/images/icons/Buyers.svg"
                     className="w-14"
                     alt=""
                   />
@@ -612,7 +612,7 @@ const Page = () => {
           <div className="md:grid grid-cols-2 items-center">
             <div>
               <img
-                src="./images/dash_image.png"
+                src="/images/dash_image.png"
                 className="md:w-9/12 drop-shadow-2xl mx-auto mb-4 md:mb-0"
                 alt=""
               />

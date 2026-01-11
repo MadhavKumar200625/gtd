@@ -110,7 +110,7 @@ const page = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
-              <img src="./images/port_image.webp" className="w-full" alt="" />
+              <img src="/images/port_image.webp" className="w-full" alt="" />
             </div>
             <div>
               <div className="grid grid-cols-2 gap-4 mt-8">
@@ -362,7 +362,7 @@ const page = () => {
         <div className="container mx-auto px-4 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center">
             <div>
-              <img src="./images/ShipmentPorts.png" className="w-full" alt="" />
+              <img src="/images/ShipmentPorts.png" className="w-full" alt="" />
             </div>
             <div>
               <h2 className="mx-auto mb-2 text-4xl font-bold leading-snug my-2 text-white">
@@ -664,7 +664,7 @@ const page = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 mb-6 md:mb-0">
-              <img src="./images/girlwithlaptop.png" alt="" />
+              <img src="/images/girlwithlaptop.png" alt="" />
             </div>
           </div>
         </div>

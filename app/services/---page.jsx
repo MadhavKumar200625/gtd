@@ -13,42 +13,42 @@ const page = () => {
   const industry = [
     {
       name: "Reduce the Risk Involved",
-      icons: "./images/icons/education.svg",
+      icons: "/images/icons/education.svg",
       pera: "Our global import and export trade data helps reduce the risks involved in global trade and provides accurate real-time insights into market trends, competitor activities, and supply chain performance. By leading data you can make informed decisions, mitigate potential trade barriers and identify the best suppliers and buyers. This minimizes financial risks, optimizes logistics, and ensures smoother operations.",
     },
     {
       name: "Expand Your Business Network",
-      icons: "./images/icons/shield.svg",
+      icons: "/images/icons/shield.svg",
       pera: "We help you expand your business network by connecting you with key suppliers, buyers data and partners across the globe. Our comprehensive global import-export trade data allows you to identify high-potential prospects and establish valuable relations in the new global import-export trade market.",
     },
     {
       name: "Find Potential Market",
-      icons: "./images/icons/factory.svg",
+      icons: "/images/icons/factory.svg",
       pera: "We help you identify potential markets by providing in-depth insights into global import-export trade data and global trade flows and demand trends. Our comprehensive data allows you to analyze emerging markets and pinpoint areas with high growth potential.",
     },
     {
       name: "Researched Market Data",
-      icons: "./images/icons/science.svg",
+      icons: "/images/icons/science.svg",
       pera: "We use information from meticulously researched market data that offers deep insights into global trade data. Our data is collected from reliable sources, ensuring accuracy and relevance for your business decisions by providing reports on trade volumes, pricing trends, and market demands.",
     },
     {
       name: "Affordable pricing",
-      icons: "./images/icons/construction.svg",
+      icons: "/images/icons/construction.svg",
       pera: "We provide affordable pricing for our premium international import-export trade data ensuring that import-export businesses of all sizes can access critical trade insights. Our flexible pricing plans are designed to suit different needs and budgets, providing exceptional value without compromising on data quality.",
     },
     {
       name: "Navigate Global Market",
-      icons: "./images/icons/nature.svg",
+      icons: "/images/icons/nature.svg",
       pera: "We provide you with a website to navigate the global import-export data and global market with ease. Our detailed import-export data helps you understand international import-export trade data and trade flows, identify key market trends, and make informed decisions.",
     },
     {
       name: "Overcome the Trade Challenges",
-      icons: "./images/icons/cargo-ship.svg",
+      icons: "/images/icons/cargo-ship.svg",
       pera: "At your global import-export trade data strategy based on the current market scenario with our customized global import-export trade data, stay ahead of the market competition.",
     },
     {
       name: "Find an Ideal Match to Meet Your Business",
-      icons: "./images/icons/cargo-ship.svg",
+      icons: "/images/icons/cargo-ship.svg",
       pera: "The objective is to identify relevant potential audiences and markets for your global import-export trade data and international import-export data business with GTD Service import-export trade data and enhance the overall productivity of your trade business.",
     },
   ];
@@ -140,7 +140,7 @@ const page = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
             <div>
               <img
-                src="./images/phone_mockup.png"
+                src="/images/phone_mockup.png"
                 className="w-2/3 mx-auto md:mx-0 md:w-full"
                 alt="import export data"
               />
@@ -368,7 +368,7 @@ const page = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 mb-6 md:mb-0">
-              <img src="./images/Service1.webp" alt="import export data statistics" />
+              <img src="/images/Service1.webp" alt="import export data statistics" />
             </div>
           </div>
         </div>

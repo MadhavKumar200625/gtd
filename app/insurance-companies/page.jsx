@@ -38,7 +38,7 @@ const page = () => {
       aboutHeading:"Global Trade Data Service offers an advanced market intelligence platform tailored for insurance companies, helping them navigate the complexities of risk management, fraud detection, and strategic decision-making. Our platform provides detailed insights into global trade, enabling insurance firms to identify fraud claims, set accurate pricing models, and track investment trends."
     },
     about: {
-      aboutIMG: "./images/INSURANCE .webp",
+      aboutIMG: "/images/INSURANCE .webp",
       aboutHeading:
         "Fuel Business Growth with Our Market Intelligence Platform",
       aboutPera:
@@ -46,7 +46,7 @@ const page = () => {
     },
    
     insights: {
-      insightIMG: "./images/INSURANCE 2.webp",
+      insightIMG: "/images/INSURANCE 2.webp",
       insightHeading:
         "Make Informed Decisions with Accurate Risk & Investment Forecasts",
       insightPera:

@@ -37,7 +37,7 @@ const page = () => {
       aboutHeading: "The research and consulting industry has a key role in leading businesses through market challenges and opportunities. Global Trade Data service offers a robust global trade intelligence platform aimed at assisting research and consulting firms with precise actionable data. With the use of detailed business intelligence reports, firms can get insights into market trends, discover opportunities for growth, and improve strategic planning."
     },
     about: {
-      aboutIMG: "./images/RESEARCH AND CONSULTING .webp",
+      aboutIMG: "/images/RESEARCH AND CONSULTING .webp",
       aboutHeading:
         "Power Your Research and Consulting with a Global Trade Intelligence Platform",
       aboutPera:
@@ -45,7 +45,7 @@ const page = () => {
     },
    
     insights: {
-      insightIMG: "./images/Research-and-consulting-2.webp",
+      insightIMG: "/images/Research-and-consulting-2.webp",
       insightHeading:
         "Boost Market Visibility with Professional Business Intelligence Reports",
       insightPera:

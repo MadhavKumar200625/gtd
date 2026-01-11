@@ -37,7 +37,7 @@ const page = () => {
       aboutHeading:"The energy industry is central to the world economy as it fuels innovation, sustainability, and economic growth. At Global Trade Data Service, we offer detailed market intelligence for energy and natural resources businesses. With our specialized knowledge, companies can better navigate market risks, forecast energy prices, and predict production needs."
     },
     about: {
-      aboutIMG: "./images/ENERGY .webp",
+      aboutIMG: "/images/ENERGY .webp",
       aboutHeading:
         "Guide the Energy Industry with Data-Driven Market Insights",
       aboutPera:
@@ -46,7 +46,7 @@ const page = () => {
    
 
     insights: {
-      insightIMG: "./images/energy 2 (1).webp",
+      insightIMG: "/images/energy 2 (1).webp",
       insightHeading:
         "Manage Global Energy Market Challenges with Expert Guidance",
       insightPera:

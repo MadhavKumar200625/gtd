@@ -39,7 +39,7 @@ const page = () => {
       aboutHeading: "GTD Service specializes in delivering market intelligence to academic institutions, enabling them to make sound decisions in the international marketplace. The platform provides valuable insights into trends in trade, upcoming opportunities, and supply chains facilitating it for academic institutions to source education products, navigate changes in the market and optimize their operations. "
     },
     about: {
-      aboutIMG: "./images/Academics.webp",
+      aboutIMG: "/images/Academics.webp",
       aboutHeading:
         "Order Tailored Market Intelligence Reports for Academic & Educational Institutions",
       aboutPera:
@@ -47,7 +47,7 @@ const page = () => {
     },
     
     insights: {
-      insightIMG: "./images/ACADEMIC 2.webp",
+      insightIMG: "/images/ACADEMIC 2.webp",
       insightHeading:
         "Strengthen Academic Research with Precise Global Trade Intelligence",
       insightPera:

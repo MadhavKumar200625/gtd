@@ -39,14 +39,14 @@ const page = () => {
       aboutHeading: "The aerospace and defence sector is the vanguard of international security, technological advancement, and economic development. The sector encompasses the designing, manufacturing, and servicing of military and civilian aircraft space vehicles and defence systems and is, therefore, crucial to national defence."
     },
     about: {
-      aboutIMG: "./images/Aerospace 1.webp",
+      aboutIMG: "/images/Aerospace 1.webp",
       aboutHeading:
         "Aerospace & Defence Technologies Market",
       aboutPera:
         "The market for sophisticated defense systems, aerospace technologies, and high-technology solutions keeps increasing due to changes in geopolitics, technological change, and more investment in defence and space exploration.",
     },
     insights: {
-      insightIMG: "./images/aerospace 2 (1).webp",
+      insightIMG: "/images/aerospace 2 (1).webp",
       insightHeading:
         "Potential of the Global Aerospace and Defence market with a top-line Insight Report",
       insightPera:

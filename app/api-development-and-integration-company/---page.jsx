@@ -95,7 +95,7 @@ const page = () => {
             <div className="order-1 lg:order-2 mb-4 md:mb-0">
               <div className="relative mx-auto border-gray-300 bg-gray-border-gray-300 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div className="rounded-md overflow-hidden h-[156px] md:h-[278px] bg-white">
-                  <img src="./images/API-1.webp" className="h-[156px] md:h-[278px] w-full rounded-lg" alt="Custom api development" /> 
+                  <img src="/images/API-1.webp" className="h-[156px] md:h-[278px] w-full rounded-lg" alt="Custom api development" /> 
                   {/* <iframe
                     allowFullScreen
                     className="h-[156px] md:h-[278px] w-full rounded-lg"
@@ -126,7 +126,7 @@ const page = () => {
                 Being the best API development agency, we provide reliable and client-centric API solutions that help you build more innovative products. Choose from our wide range of API development services.
                 </p>
                 <img
-                  src="./images/API-2.webp"
+                  src="/images/API-2.webp"
                   className="w-2/3 mx-auto mt-16"
                   alt="api solutions"
                 />
@@ -136,7 +136,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/FIXAPI.svg"
+                    src="/images/icons/FIXAPI.svg"
                     className="size-20 mb-3"
                     alt=""
                   />
@@ -151,7 +151,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/RESTfulAPI.svg"
+                    src="/images/icons/RESTfulAPI.svg"
                     className="size-20 mb-3"
                     alt=""
                   />
@@ -166,7 +166,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/TradeAPIs.svg"
+                    src="/images/icons/TradeAPIs.svg"
                     className="size-20 mb-3"
                     alt=""
                   />
@@ -190,7 +190,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/CloudAPISolutions.svg"
+                    src="/images/icons/CloudAPISolutions.svg"
                     className="size-20 mb-3"
                     alt=""
                   />
@@ -205,7 +205,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/ThirdPartyAPI.svg"
+                    src="/images/icons/ThirdPartyAPI.svg"
                     className="size-20 mb-3"
                     alt=""
                   />
@@ -220,7 +220,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/Support.svg"
+                    src="/images/icons/Support.svg"
                     className="size-20 mb-3"
                     alt=""
                   />
@@ -530,7 +530,7 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-8 md:gap-6">
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/exporters_md_banner.webp"
+                src="/images/exporters_md_banner.webp"
                 className="w-100 rounded-xl"
                 alt="Exporters"
               />
@@ -564,7 +564,7 @@ const page = () => {
             </div>
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/importer_md_banner.webp"
+                src="/images/importer_md_banner.webp"
                 className="w-100 rounded-xl"
                 alt="Importers"
               />
@@ -598,7 +598,7 @@ const page = () => {
             </div>
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/automative_md_banner.webp"
+                src="/images/automative_md_banner.webp"
                 className="w-100 rounded-xl"
                 alt="Automotive"
               />

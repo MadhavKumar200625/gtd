@@ -21,7 +21,7 @@ const Testomonials = () => {
               <div className="h-[50vh] overflow-hidden md:px-12 slide_wrapper relative">
                 <div className="slide_inner">
                   <div className="rounded-lg shadow-md p-4 mb-4 bg-white">
-                    <img src="./images/quote.svg" className="w-8" alt="" />
+                    <img src="/images/quote.svg" className="w-8" alt="" />
                     <p className="my-4">
                     GTD Service global import export data is very accurate and updated. It is the best company with a full of values and customer-centric approach. 
                     The team was highly professional and provided the best solutions to the queries.
@@ -81,7 +81,7 @@ const Testomonials = () => {
                     </div>
                   </div>
                   <div className="rounded-lg shadow-md p-4 mb-4 bg-white">
-                    <img src="./images/quote.svg" className="w-8" alt="" />
+                    <img src="/images/quote.svg" className="w-8" alt="" />
                     <p className="my-4">
                     GTD Solutions provides the best import export data services in USA. I highly recommend their services. 
                     They helped me grow my business and find buyers in Indonesia.
@@ -141,7 +141,7 @@ const Testomonials = () => {
                     </div>
                   </div>
                   <div className="rounded-lg shadow-md p-4 mb-4 bg-white">
-                    <img src="./images/quote.svg" className="w-8" alt="" />
+                    <img src="/images/quote.svg" className="w-8" alt="" />
                     <p className="my-4">
                     They provide the most accurate import export data and are the best global trade data provider.
                      GTD Services has the best portal and helped in expanding my business globally.
@@ -201,7 +201,7 @@ const Testomonials = () => {
                     </div>
                   </div>
                   <div className="rounded-lg shadow-md p-4 mb-4 bg-white">
-                    <img src="./images/quote.svg" className="w-8" alt="" />
+                    <img src="/images/quote.svg" className="w-8" alt="" />
                     <p className="my-4">
                     Trustworthy Service Provider for Global Import Export Data. The team is always ready to assist you in every possible manner. 
                     We are in the sugar dealing business, and GTD Services has helped me find genuine buyers for my business.

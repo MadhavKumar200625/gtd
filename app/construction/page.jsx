@@ -37,14 +37,14 @@ const page = () => {
       aboutHeading: "GTD Service offers a complete market intelligence platform for construction businesses. Using global trade data from more than 200+ countries, businesses can streamline project planning, reduce risks, and increase cost-effectiveness. With in-depth financial and shipment data, businesses can enhance cost estimation sourcing and market expansion."
     },
     about: {
-      aboutIMG: "./images/Construction 1.webp",
+      aboutIMG: "/images/Construction 1.webp",
       aboutHeading:
         "Top Market Intelligence Solutions for Construction Firms",
       aboutPera:
         "The platform enables construction professionals to make informed decisions using real-time data, offering insights into pricing trends, major suppliers, and new markets. By using these reports, contractors can prevent overspending, optimise operations, and spot lucrative opportunities in the international market.",
     },
     insights: {
-      insightIMG: "./images/CONSTRUCTION 2.webp",
+      insightIMG: "/images/CONSTRUCTION 2.webp",
       insightHeading:
         "Receive Valuable Insights into the World Construction Industry from Our Quality Reports",
       insightPera:

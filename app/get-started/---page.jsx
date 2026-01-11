@@ -48,7 +48,7 @@ const GetStarted = () => {
     <>
       <section className="flex items-center pb-24 overflow-hidden relative bg-gradient-to-r from-blue-100 via-white to-orange-100 bg-gradient-45 bg-opacity-50">
          <div className='absolute -top-2/4 w-full h-screen z-0 opacity-10'>
-            <img src="./images/exim_data.png" className='w-full' alt="" />
+            <img src="/images/exim_data.png" className='w-full' alt="" />
         </div>
         <div className="py-8 mx-auto container px-3 lg:pt-16 lg:pb-10 z-10 relative mt-10">
           <div className="text-center">

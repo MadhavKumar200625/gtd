@@ -13,7 +13,7 @@ const GlobalTradeDatabase = () => {
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-white via-emerald-100 to-blue-100 bg-gradient-45 bg-opacity-50">
         {/* <div className='absolute -top-2/4 w-full h-screen z-0 opacity-10'>
-                    <img src="./images/ports.webp" className='w-full' alt="" />
+                    <img src="/images/ports.webp" className='w-full' alt="" />
                 </div> */}
         <div className="py-8 mx-auto container px-3 lg:pt-16 lg:pb-10 z-10 relative">
           <nav className="flex pt-20" aria-label="Breadcrumb">
@@ -89,7 +89,7 @@ const GlobalTradeDatabase = () => {
             </div>
             <div>
               <img
-                src="./images/database.svg"
+                src="/images/database.svg"
                 className="w-2/3 ms-auto"
                 alt=""
               />
@@ -438,7 +438,7 @@ const GlobalTradeDatabase = () => {
             <div className="p-4 rounded-2xl bg-white shadow-xl hover:scale-105 transition ease-linear">
               <div>
                 <img
-                  src="./images/emerging_markets.jpg"
+                  src="/images/emerging_markets.jpg"
                   className="ms-auto rounded-lg w-full"
                   alt=""
                 />
@@ -456,7 +456,7 @@ const GlobalTradeDatabase = () => {
             <div className="p-4 rounded-2xl bg-white shadow-xl hover:scale-105 transition ease-linear">
               <div>
                 <img
-                  src="./images/trending_product_landing.jpg"
+                  src="/images/trending_product_landing.jpg"
                   className="ms-auto rounded-lg w-full"
                   alt=""
                 />
@@ -474,7 +474,7 @@ const GlobalTradeDatabase = () => {
             <div className="p-4 rounded-2xl bg-white shadow-xl hover:scale-105 transition ease-linear">
               <div>
                 <img
-                  src="./images/global_buyer_supplier.jpg"
+                  src="/images/global_buyer_supplier.jpg"
                   className="ms-auto rounded-lg w-full"
                   alt=""
                 />

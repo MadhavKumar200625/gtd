@@ -37,14 +37,14 @@ const page = () => {
       aboutHeading: "Sales and marketing are two core business functions that complement each other to generate revenue and growth. While marketing creates awareness and generates leads by attracting potential customers, sales turn those leads into paying customers."
     },
     about: {
-      aboutIMG: "./images/Sales-and-marketing1.webp",
+      aboutIMG: "/images/Sales-and-marketing1.webp",
       aboutHeading:
         "Drive your Sales and Marketing Business with a Market Intelligence Report",
       aboutPera:
         "Properly coordinated sales and marketing enable sustainable business success. Market Intelligence report will help boost your sales and also helps with the marketing of the business.",
     },
     insights: {
-      insightIMG: "./images/sale and marketing 2.webp",
+      insightIMG: "/images/sale and marketing 2.webp",
       insightHeading:
         "Develop an emerging Brand image in the sales and Marketing segment",
       insightPera:

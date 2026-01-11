@@ -10,42 +10,42 @@ const page = () => {
   const industry = [
     {
       name: "Most Importing and Exporting Nations",
-      icons: "./images/icons/education.svg",
+      icons: "/images/icons/education.svg",
       pera: "Discover the world's largest trading nations and their key imports and exports. Understanding global trade flows can help businesses identify new markets, trade opportunities, and economic trends.  ",
     },
     {
       name: "Trade Value and Volume Analysis",
-      icons: "./images/icons/shield.svg",
+      icons: "/images/icons/shield.svg",
       pera: "It requires an understanding of the importance of trade value and revision, as it is essential for businesses, policy, and analysis to keep track of what is going on in global markets. ",
     },
     {
       name: "Key Products and HS Code Data",
-      icons: "./images/icons/factory.svg",
+      icons: "/images/icons/factory.svg",
       pera: "Get precise insights into global trade with HS Code-based data analysis! The Harmonised System (HS Code) is an internationally standardised system used to classify traded goods, helping businesses track product-specific import and export trends.",
     },
     {
       name: "Major Ports and Trading Partners",
-      icons: "./images/icons/science.svg",
+      icons: "/images/icons/science.svg",
       pera: "Global trade thrives through key ports and strong trade partnerships, enabling seamless import and export operations. Understanding major ports and top trading partners helps businesses optimise logistics and expand market reach.",
     },
     // {
     //   name: "Construction",
-    //   icons: "./images/icons/construction.svg",
+    //   icons: "/images/icons/construction.svg",
     //   pera: "For the ever-changing construction sector, building material suppliers, construction equipment firms, architects, and contractors may receive reliable and timely data, analysis, research, and insight into the present and future market circumstances and building requirements.",
     // },
     // {
     //   name: "nature",
-    //   icons: "./images/icons/nature.svg",
+    //   icons: "/images/icons/nature.svg",
     //   pera: "Energy has you covered whether you need to find the safest drilling location, assess an oil asset, or evaluate a solar array investment. Our 600+ energy specialists and 800+ geoscientists and engineers use proprietary data and sophisticated analytics to provide insights into the full energy value chain, from underground oil, gas, and coal to renewables, local gas stations, and worldwide power grids.",
     // },
     // {
     //   name: "Maritime & Commercial",
-    //   icons: "./images/icons/cargo-ship.svg",
+    //   icons: "/images/icons/cargo-ship.svg",
     //   pera: "Our expertise and insight, based on a more than 250-year history of information collection, assist you in navigating the complicated environment of the seaborne trade. For the marine, security, and energy-trading groups, resources include ownership data, live ship movements, risk profiles, and intelligence tools.",
     // },
     // {
     //   name: "financial",
-    //   icons: "./images/icons/cargo-ship.svg",
+    //   icons: "/images/icons/cargo-ship.svg",
     //   pera: "Bankers, asset managers, corporate finance experts, and insurers all across the world must weigh economic instability, geopolitical turmoil, and interconnected industry dynamics when making investment and lending choices. With our award-winning economic predictions and analyses, Financial & Capital Markets aids you in strategic planning as well as managing your investment and loan portfolios.",
     // },
   ];
@@ -77,7 +77,7 @@ const page = () => {
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-white via-purple-100 to-yellow-100 bg-gradient-45 bg-opacity-50">
         <div className="absolute top-0 w-full h-screen z-0 opacity-20">
-          <img src="./images/dots.png" className="w-full" alt="" />
+          <img src="/images/dots.png" className="w-full" alt="" />
         </div>
         <div className="py-8 mx-auto container px-3 lg:pt-16 lg:pb-10 z-10 relative">
           <nav className="flex pt-20" aria-label="Breadcrumb">
@@ -204,7 +204,7 @@ const page = () => {
             <div className="order-1 md:order-2">
               {/* <div className="w-80 h-80 rounded-full p-5 mx-auto relative">
                 <div className="w-full h-full  rounded-full bg-orange-100 flex items-center justify-center p-8">
-                  <img src="./images/theworldbank.png" alt="" />
+                  <img src="/images/theworldbank.png" alt="" />
                 </div>
                 <div className="w-80 h-80 border-2 border-blue-900 rounded-full top-0 left-0 mx-auto absolute spin_rotate">
                   <div className="absolute w-5 h-5 rounded-full bg-emerald-400 -top-3 left-2/4"></div>
@@ -224,7 +224,7 @@ const page = () => {
             <div>
               {/* <div className="w-80 h-80 rounded-full p-5 mx-auto relative">
                 <div className="w-full h-full  rounded-full bg-orange-100 flex items-center justify-center p-8">
-                  <img src="./images/BUSINESS-OPP.png" alt="" />
+                  <img src="/images/BUSINESS-OPP.png" alt="" />
                 </div>
                 <div className="w-80 h-80 border-2 border-blue-900 rounded-full top-0 left-0 mx-auto absolute spin_rotate">
                   <div className="absolute w-5 h-5 rounded-full bg-emerald-400 -top-3 left-2/4"></div>

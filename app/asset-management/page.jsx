@@ -39,14 +39,14 @@ const page = () => {
       aboutHeading:"GTD Service is an extensive market research solution designed specifically for asset management firms. Through the provision of detailed international import-export records the solution enables asset managers to make effective investment choices and maximize asset portfolios. It enables thorough market analysis, including the identification of lucrative opportunities, optimization of operations, and risk reduction."
     },
     about: {
-      aboutIMG: "./images/Asset-Management-1.webp",
+      aboutIMG: "/images/Asset-Management-1.webp",
       aboutHeading:
         "Leading Market Research Platform for Asset and Investment Companies",
       aboutPera:
         "With real-time access to global trade patterns, asset management experts can strategically position their investments according to market trends, guaranteeing improved returns and a competitive advantage in the financial industry.",
     },
     insights: {
-      insightIMG: "./images/asset-management 2.webp",
+      insightIMG: "/images/asset-management 2.webp",
       insightHeading:
         "Invest Smarter and Accumulate Asset Wealth with Precision",
       insightPera:

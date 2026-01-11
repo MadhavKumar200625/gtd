@@ -37,7 +37,7 @@ const page = () => {
       aboutHeading: "Global Trade Data service provides an in-depth analysis of global import-export trade data with an emphasis on financial transactions market trends, and economic analysis. The site gives important financial institutions, investors, and businesses useful data to make informed decisions regarding international import-export trade reports and risk assessment and investment opportunities and assists users in analyzing financial flows."
     },
     about: {
-      aboutIMG: "./images/FINANCE.webp",
+      aboutIMG: "/images/FINANCE.webp",
       aboutHeading:
         "Improve Your Decision-Making with Our Detailed Financial Reports",
       aboutPera:
@@ -45,7 +45,7 @@ const page = () => {
     },
     
     insights: {
-      insightIMG: "./images/FINANCE 2.webp",
+      insightIMG: "/images/FINANCE 2.webp",
       insightHeading:
         "Drive Maximum Revenue through Intelligent, Data-Based Decisions",
       insightPera:

@@ -137,7 +137,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/FIXAPI.svg"
+                    src="/images/icons/FIXAPI.svg"
                     className="size-20 mb-3"
                     alt="Restful api"
                     title="Restful api"
@@ -153,7 +153,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/RESTfulAPI.svg"
+                    src="/images/icons/RESTfulAPI.svg"
                     className="size-20 mb-3"
                     alt="Fix api"
                     title="Fix api"
@@ -169,7 +169,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/TradeAPIs.svg"
+                    src="/images/icons/TradeAPIs.svg"
                     className="size-20 mb-3"
                     alt="Trade Api"
                     title="Trade Api"
@@ -194,7 +194,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/CloudAPISolutions.svg"
+                    src="/images/icons/CloudAPISolutions.svg"
                     className="size-20 mb-3"
                     alt="Cloud API Solutions"
                     title="Cloud API Solutions"
@@ -210,7 +210,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/ThirdPartyAPI.svg"
+                    src="/images/icons/ThirdPartyAPI.svg"
                     className="size-20 mb-3"
                     alt="Third Party API Integration"
                     title="Third Party API Integration"
@@ -226,7 +226,7 @@ const page = () => {
               <div className="myshadow p-3 rounded-xl mb-5">
                 <div className="p-3 bg-white rounded-lg">
                   <img
-                    src="./images/icons/Support.svg"
+                    src="/images/icons/Support.svg"
                     className="size-20 mb-3"
                     alt="API Maintenance & Support"
                     title="API Maintenance & Support"

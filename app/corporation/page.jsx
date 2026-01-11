@@ -39,14 +39,14 @@ const page = () => {
       aboutHeading: "The Global Trade Data service is a robust market intelligence platform specially designed for business corporations to help them dominate the global marketplace. Through giving strong insights into trends in international import-export database industries and competitive strategies, the platform assists business corporations in maximizing operations, discovering worthwhile investment prospects and surpassing competitors."
     },
     about: {
-      aboutIMG: "./images/Corporation-1.webp",
+      aboutIMG: "/images/Corporation-1.webp",
       aboutHeading: "Leading Market Intelligence Platform for Corporate Success",
       aboutPera:
         "By using real-time trade data and more than 200+ countries' financial reports, corporations are able to make informed decisions to drive sales, improve market strategy, and avoid risks, ensuring success and growth in a competitive business environment.",
     },
 
     insights: {
-      insightIMG: "./images/corp 2.webp",
+      insightIMG: "/images/corp 2.webp",
       insightHeading:
         "Take Your Business to the Next Level with Precise Market Insights",
       insightPera:

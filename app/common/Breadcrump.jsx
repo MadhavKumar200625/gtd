@@ -6,7 +6,7 @@ const Breadcrump = ({ pageName, peragraph, subPage, heading }) => {
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-blue-100 via-indigo-100 to-yellow-100 bg-gradient-45 bg-opacity-50">
         <div className="absolute top-0 w-full h-screen z-0 opacity-20">
-          <img src="./images/dots.png" className="w-full" alt="" />
+          <img src="/images/dots.png" className="w-full" alt="" />
         </div>
         <div className="py-8 mx-auto container px-3 lg:py-15 z-10 relative">
           <nav className="flex pt-20" aria-label="Breadcrumb">

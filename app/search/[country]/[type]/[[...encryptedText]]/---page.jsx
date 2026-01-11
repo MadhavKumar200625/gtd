@@ -324,7 +324,7 @@ const SearchPage = () => {
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-white via-purple-100 to-yellow-100 bg-gradient-45 bg-opacity-50">
         <div className="absolute top-0 w-full h-screen z-0 opacity-20">
-          <img src="./images/dots.png" className="w-full" alt="" />
+          <img src="/images/dots.png" className="w-full" alt="" />
         </div>
         <div className="py-8 mx-auto container px-3 lg:pt-16 lg:pb-10 z-10 relative">
           <nav className="flex pt-20" aria-label="Breadcrumb">
@@ -831,7 +831,7 @@ const SearchPage = () => {
           <div className="mt-16 md:grid md:grid-cols-4 gap-4">
             <div className="p-3 bg-white text-center border rounded-lg">
               <img
-                src="./images/icons/network.svg"
+                src="/images/icons/network.svg"
                 className="w-16 mb-3 mx-auto"
                 alt=""
               />
@@ -841,7 +841,7 @@ const SearchPage = () => {
             </div>
             <div className="p-3 bg-white text-center border rounded-lg">
               <img
-                src="./images/icons/target.svg"
+                src="/images/icons/target.svg"
                 className="w-16 mb-3 mx-auto"
                 alt=""
               />
@@ -851,7 +851,7 @@ const SearchPage = () => {
             </div>
             <div className="p-3 bg-white text-center border rounded-lg">
               <img
-                src="./images/icons/worldwide.svg"
+                src="/images/icons/worldwide.svg"
                 className="w-16 mb-3 mx-auto"
                 alt=""
               />
@@ -861,7 +861,7 @@ const SearchPage = () => {
             </div>
             <div className="p-3 bg-white text-center border rounded-lg">
               <img
-                src="./images/icons/reliable.svg"
+                src="/images/icons/reliable.svg"
                 className="w-16 mb-3 mx-auto"
                 alt=""
               />

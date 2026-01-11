@@ -97,7 +97,7 @@ const Header = () => {
                     <div className="relative z-10">
                       <div className="p-3 bg-slate-50 rounded-xl flex items-center gap-4">
                         <img
-                          src="./images/solutions.svg"
+                          src="/images/solutions.svg"
                           className="w-24"
                           alt="Solutions"
                           title="Solutions"
@@ -458,7 +458,7 @@ const Mobileheader = ({ setMenuShow }) => {
                 <div className="relative z-10">
                   <div className="p-3 bg-slate-50 rounded-xl hidden md:flex items-center gap-4">
                     <img
-                      src="./images/solutions.svg"
+                      src="/images/solutions.svg"
                       className="w-24"
                       alt="Solutions"
                       title="Solutions"

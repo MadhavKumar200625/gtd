@@ -176,8 +176,8 @@ export default async function Page({ params }) {
   };
 
   const sampleDta = [
-    { name: "Covers 99 Chapters", icons: "../../images/icons/HS_Code.png" },
-    { name: "US Import Data Country Wise", icons: "../../images/icons/shipment.png" },
+    { name: "Covers 99 Chapters", icons: ".././images/icons/HS_Code.png" },
+    { name: "US Import Data Country Wise", icons: ".././images/icons/shipment.png" },
     // ... other items
   ];
 
@@ -856,7 +856,7 @@ export default async function Page({ params }) {
         <div className="container px-3 md:px-0 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <img src="../../../images/CountryPage.webp" className="w-full" alt="GTD Service Global Trade Intelligence System" title="GTD Service Global Trade Intelligence System" />
+              <img src="../.././images/CountryPage.webp" className="w-full" alt="GTD Service Global Trade Intelligence System" title="GTD Service Global Trade Intelligence System" />
             </div>
             <div>
               <h4 className="text-primary text-lg text-emerald-400 font-medium">
@@ -1182,7 +1182,7 @@ export default async function Page({ params }) {
         <div className="container px-3 md:px-0 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 items-center">
             <div>
-              <img src="../../../images/integration.webp" className="w-full" alt="" />
+              <img src="../.././images/integration.webp" className="w-full" alt="" />
             </div>
             <div className="col-span-2">
               <h3 className="mx-auto mb-2 text-4xl font-bold leading-snug my-2 text-white">

@@ -610,7 +610,7 @@ export default function ClientCompanyProfile({ country, company }) {
                             </div>
                         </div>
                         <div className="order-1 md:order-2 mb-6 md:mb-0">
-                            <img src="./images/girlwithlaptop.png" alt="" />
+                            <img src="/images/girlwithlaptop.png" alt="" />
                         </div>
                     </div>
                 </div>

@@ -38,7 +38,7 @@ const page = () => {
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-white via-emerald-100 to-blue-100 bg-gradient-45 bg-opacity-50">
         <div className="absolute -top-2/4 w-full h-screen z-0 opacity-10">
-          <img src="./images/dots.png" className="w-full" alt="" />
+          <img src="/images/dots.png" className="w-full" alt="" />
         </div>
         <div className="py-8 mx-auto container px-3 lg:pt-16 lg:pb-10 z-10 relative">
           <nav className="flex pt-20" aria-label="Breadcrumb">

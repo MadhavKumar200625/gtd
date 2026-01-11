@@ -10,27 +10,27 @@ const page = () => {
   const sampleDta = [
     {
       name: "Covers 99 Chapters",
-      icons: "./images/icons/HS_Code.png",
+      icons: "/images/icons/HS_Code.png",
     },
     {
       name: "US Export Data Country Wise",
-      icons: "./images/icons/shipment.png",
+      icons: "/images/icons/shipment.png",
     },
     {
       name: "Historical US Export Data Year Wise",
-      icons: "./images/icons/consignment.png",
+      icons: "/images/icons/consignment.png",
     },
     {
       name: "List Of Exporters In US",
-      icons: "./images/icons/Items.png",
+      icons: "/images/icons/Items.png",
     },
     {
       name: "US Export Products List",
-      icons: "./images/icons/import_data.png",
+      icons: "/images/icons/import_data.png",
     },
     {
       name: "US Ports Exports Data",
-      icons: "./images/icons/Ports_Data.png",
+      icons: "/images/icons/Ports_Data.png",
     },
   ];
   var settings = {
@@ -760,7 +760,7 @@ const page = () => {
         <div className="container px-3 md:px-0 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <img src="./images/dash_image.png" className="w-full" alt="" />
+              <img src="/images/dash_image.png" className="w-full" alt="" />
             </div>
             <div>
               <h4 className="text-primary text-lg text-emerald-400 font-medium">
@@ -1084,7 +1084,7 @@ const page = () => {
         <div className="container px-3 md:px-0 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 items-center">
             <div>
-              <img src="./images/integration.png" className="w-full" alt="" />
+              <img src="/images/integration.png" className="w-full" alt="" />
             </div>
             <div className="col-span-2">
               <h3 className="mx-auto mb-2 text-4xl font-bold leading-snug my-2 text-white">

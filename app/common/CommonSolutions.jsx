@@ -17,7 +17,7 @@ export const CommonSolutions = ({ data }) => {
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-blue-100 via-indigo-100 to-yellow-100 bg-gradient-45 bg-opacity-50">
         <div className="absolute top-0 w-full h-screen z-0 opacity-20">
-          <img src="./images/dots.png" className="w-full" alt="" />
+          <img src="/images/dots.png" className="w-full" alt="" />
         </div>
         <div className="py-8 mx-auto container px-3 lg:py-15 z-10 relative">
           <nav className="flex pt-20" aria-label="Breadcrumb">
@@ -252,7 +252,7 @@ export const CommonSolutions = ({ data }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-8 md:gap-6">
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/Exporters1.webp"
+                src="/images/Exporters1.webp"
                 className="w-100 rounded-xl"
                 alt="Exporters"
                 title="Exporters"
@@ -287,7 +287,7 @@ export const CommonSolutions = ({ data }) => {
             </div>
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/Importers1.webp"
+                src="/images/Importers1.webp"
                 className="w-100 rounded-xl"
                 alt="Importers"
                 title="Importers"
@@ -322,7 +322,7 @@ export const CommonSolutions = ({ data }) => {
             </div>
             <div className="flex group flex-col gap-4">
               <img
-                src="./images/AUTOMOTIVE .webp"
+                src="/images/AUTOMOTIVE .webp"
                 className="w-100 rounded-xl"
                 alt="Automotive"
                 title="Automotive"

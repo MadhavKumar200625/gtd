@@ -37,13 +37,13 @@ const page = () => {
       aboutHeading: "GTD Service provides a robust global market intelligence solution designed for government agencies. By delivering in-depth insights into world trade trends, demand projections, and risk factors, we enable government agencies to make sound choices. Our comprehensive reports assist in developing successful trade policies, improving tariff revenues, and stimulating economic growth through strengthened market strategies."
     },
     about: {
-      aboutIMG: "./images/Government_Agencies1.webp",
+      aboutIMG: "/images/Government_Agencies1.webp",
       aboutHeading: "Government Agencies Advanced Market Intelligence Platform",
       aboutPera:
         " Our platform provides government agencies with the facilities required to become competitive in the international market and attain sustainable economic growth.",
     },
     insights: {
-      insightIMG: "./images/GOVT-AGEN 2.webp",
+      insightIMG: "/images/GOVT-AGEN 2.webp",
       insightHeading:
         "Unleash Global Market Intelligence to Inform Economic Strategies",
       insightPera:

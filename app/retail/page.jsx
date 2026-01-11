@@ -37,14 +37,14 @@ const page = () => {
       aboutHeading: "Retail refers to the activity of selling goods and services directly to individuals through different channels, such as physical outlets, e-commerce websites, and direct selling. Retail is central to the world economy, linking producers to final consumers and defining consumer interactions."
     },
     about: {
-      aboutIMG: "./images/Retail1.webp",
+      aboutIMG: "/images/Retail1.webp",
       aboutHeading:
         "Emerging Business Technology for Retail Sector",
       aboutPera:
         "With emerging technology and changing consumer behavior, the retail sector keeps adapting at a breakneck pace, providing new opportunities and challenges for companies.",
     },
     insights: {
-      insightIMG: "./images/RETAIL 2.webp",
+      insightIMG: "/images/RETAIL 2.webp",
       insightHeading:
         "Establish Your Business in the Global Market with Realistic Insights",
       insightPera:

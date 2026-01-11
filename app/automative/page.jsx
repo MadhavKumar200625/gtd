@@ -38,7 +38,7 @@ const page = () => {
              "The automotive industry is a highly competitive and fast-moving business where innovation and strategic knowledge become the key to staying one step ahead. Through the GTD Service intelligence platform, companies can derive valuable information about the current market trends, new technologies, and worldwide international import-export demands. As a manufacturer, exporter, and importer our platform assists in determining the major opportunities as well as maximizing business decisions. "
     },
     about: {
-      aboutIMG: "./images/AUTOMOTIVE .webp",
+      aboutIMG: "/images/AUTOMOTIVE .webp",
       aboutHeading:
         "Stay Ahead of the Competition with Key Trends and Demand in the Automotive Market",
       aboutPera:
@@ -47,7 +47,7 @@ const page = () => {
     
 
     insights: {
-      insightIMG: "./images/automotive 2.webp",
+      insightIMG: "/images/automotive 2.webp",
       insightHeading:
         "Establish a Strong Brand Position in the Global Automotive Market",
       insightPera:
