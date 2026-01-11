@@ -1,26 +1,224 @@
-@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter";
+  }
+  footer {
+    background-image: linear-gradient(#100f3bd2, #120b3ec0),
+      url(../public/images/footer-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* inter-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../public/fonts/inter-v18-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../public/fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../public/fonts/inter-v18-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../public/fonts/inter-v18-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../public/fonts/inter-v18-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../public/fonts/inter-v18-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../public/fonts/inter-v18-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .mybg {
+    background-image: url(../public/images/bg.webp);
+    background-position: center;
+    background-size: cover;
+  }
+  .vertical-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  .vertical-scroll::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #08f;
+  }
+  .vertical-scroll::-webkit-scrollbar-track {
+    background-color: rgb(238, 247, 255);
+  }
+}
+nav li a.active {
+  color: rgb(0, 94, 255);
+}
+.slick-track {
+  margin: 25px 0 35px !important;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.linerotate {
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    #112 5%,
+    #112 60%,
+    #213 95%
+  );
+  border: solid 3px transparent;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #08f,
+    #f03 99%,
+    transparent
+  );
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 5s linear infinite;
+}
+@keyframes bg-spin {
+  100% {
+    --border-angle: 1turn;
+  }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.myshadow {
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3),
+    inset 0 -2px 6px 0 rgba(10, 37, 64, 0.35);
+}
+.spin_rotate {
+  animation: spin 18s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.client_logo img {
+  width: 150px;
+  aspect-ratio: 2 / 1;
+  object-fit: scale-down;
+}
+
+.client_logo_new img {
+  height: 90px;
+  aspect-ratio: 2 / 1;
+  object-fit: scale-down;
+}
+
+.slide_inner {
+  animation: toptobottom 30s linear infinite;
+}
+.slide_inner:hover {
+  animation-play-state: paused;
+}
+@keyframes toptobottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.testimonials {
+  background-image: linear-gradient(#fffffff2, #fffffff5),
+    url(../public/images/map_line.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.slide_wrapper:after,
+.slide_wrapper:before {
+  content: "";
+  height: 60px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+.slide_wrapper:before {
+  background: linear-gradient(to bottom, #ffffff, transparent);
+  top: 0;
+}
+.slide_wrapper:after {
+  background: linear-gradient(to top, #ffffff, transparent);
+  bottom: 0;
+}
+.righttoleft {
+  animation: righttoleft 0.3s ease;
+}
+@keyframes righttoleft {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+input[type="radio"]:checked + span {
+  display: block;
+}
+.donut_chart .apexcharts-canvas{
+  width: 100% !important;
+  height: 100% !important;
 }
