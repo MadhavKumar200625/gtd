@@ -150,8 +150,8 @@ const ClientPage = () => {
   const queryParams = new URLSearchParams();
   queryParams.set("product", normalizedCode); // Use lowercase
 
-  const encodedQuery = encodeURIComponent(btoa(queryParams.toString()));
-  const url = `/search/${countrySlug}/${typeSlug}/${encodedQuery}`;
+  // const encodedQuery = encodeURIComponent(btoa(queryParams.toString()));
+  const url = `/search/${countrySlug}/${typeSlug}/product-${normalizedCode}`;
   router.push(url);
 };
     

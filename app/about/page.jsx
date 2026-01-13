@@ -100,7 +100,7 @@ const page = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="size-10 fill-emerald-200"
+                    className="size-10 fill-emerald-300"
                   >
                     <path
                       fillRule="evenodd"
@@ -109,7 +109,7 @@ const page = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-gray-200">
+                <p className="text-black">
                 You can make more informed decisions about your import-export trade strategies by understanding global import-export trade data market trade flows, market demands and product trends allowing you to optimize your operations. Minimize risks and identify new opportunities with confidence.
                 </p>
               </div>
@@ -119,7 +119,7 @@ const page = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="size-10 fill-emerald-200"
+                    className="size-10 fill-emerald-300"
                   >
                     <path
                       fillRule="evenodd"
@@ -128,7 +128,7 @@ const page = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-gray-200">
+                <p className="text-black">
                 Get comprehensive global export and import data that helps you analyze emerging markets and assess demand across various regions. The available import data and export data enables you to identify profitable markets for expansion and tailor your products and services to meet the specific needs of your target audience.
                 </p>
               </div>
@@ -138,7 +138,7 @@ const page = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="size-10 fill-emerald-200"
+                    className="size-10 fill-emerald-300"
                   >
                     <path
                       fillRule="evenodd"
@@ -147,7 +147,7 @@ const page = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-gray-200">
+                <p className="text-black">
                 GTD Service helps you to stay ahead of your competitors by utilizing accurate and up-to-date global trade data. You can track competitors' activities and monitor pricing trends and adapt your international business strategies to gain an edge in your industry.
                 </p>
               </div>
@@ -157,7 +157,7 @@ const page = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="size-10 fill-emerald-200"
+                    className="size-10 fill-emerald-300"
                   >
                     <path
                       fillRule="evenodd"
@@ -166,7 +166,7 @@ const page = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-gray-200">
+                <p className="text-black">
                 Import-export trade data can help you streamline your supply chain by offering insights into trade volumes, transit routes, and supplier performance. This enables you to make better choices in sourcing logistics and inventory management, reducing costs and improving operational efficiency. 
                 </p>
               </div>
