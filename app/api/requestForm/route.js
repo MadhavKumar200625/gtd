@@ -35,7 +35,7 @@ export async function POST(req) {
       service: "gmail",
       auth: {
         user: "support@gtdservice.com",
-        pass: "grin auqf mrev kyqc"
+        pass: "uxov hpvn jpke rrcw"
       },
     });
 

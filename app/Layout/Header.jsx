@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={` absolute ${scrolled ? "sticky top-0 bg-[#ffffffbd]" : "bg-transparent"
+        className={` absolute  ${scrolled ? "sticky top-0 bg-[#ffffffbd]" : "bg-transparent"
           }  px-2 md:px-0 top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 supports-backdrop-blur:bg-white/60 `}
       >
         <header className="container mx-auto py-1 flex items-center justify-between">

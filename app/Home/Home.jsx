@@ -46,7 +46,7 @@ const Home = () => {
           <img src="/images/bg-shape.png" className="w-full" alt="" />
         </div>
         <div className="py-8 md:px-6 mx-auto container px-3 text-center lg:py-28 lg:px-12 z-10 relative">
-          <a
+          <Link
             href="/import-export-data-country-wise"
             className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-white shadow-sm rounded-full hover:text-white hover:bg-blue-950"
             role="alert"
@@ -69,7 +69,7 @@ const Home = () => {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </a>
+          </Link>
           <h1 className="mb-4 text-4xl font-bold leading-snug text-dark md:text-5xl lg:text-5xl lg:w-2/3 lg:mx-auto">
             Global Trade Data Service | Import Export Trade Data Provider
           </h1>
@@ -158,14 +158,14 @@ advantage.
               <option>Import</option>
               <option>Export</option>
             </select>
-            <a
+            <Link
               href="/searchcountry"
               className="rounded-xl px-5 py-3 mybtn font-semibold linerotate flex items-center group"
             >
               <span className=" text-white text-sm whitespace-nowrap">
                 Search Data
               </span>
-            </a>
+            </Link>
           </div> */}
         </div>
       </section>
@@ -190,7 +190,7 @@ the precise and custom import-export trade data country-wise.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 lg:mt-14">
             {country?.map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href="/import-export-data-country-wise"
                 className={`card group relative shadow-sm border border-gray-300 rounded-lg p-3 flex items-center gap-4 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold`}
@@ -207,7 +207,7 @@ the precise and custom import-export trade data country-wise.
                     {item.detail}
                   </p>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="mt-10 myshadow rounded-xl p-5 bg-[#f6f9fc]">
@@ -225,14 +225,14 @@ options to reach out most diversified markets and search from the <b>custom trad
 
                 </p>
                 <div className="flex">
-                  <a
+                  <Link
                     href="/pricing"
                     className="rounded-xl px-5 py-3 mybtn font-semibold linerotate flex items-center group"
                   >
                     <span className=" text-white text-sm whitespace-nowrap">
                       Explore Now
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -265,22 +265,22 @@ global trade data service companies along with <b>updated shipment data. </b>
 buyers and suppliers from over 200+ countries. 
               </p>
               <div className="md:flex mt-5 gap-3">
-                <a
+                <Link
                   href="/global-trade-database"
                   className="rounded-xl px-5 py-3 mb-3 md:mb-0 mybtn font-semibold linerotate flex items-center shadow-lg shadow-gray-800 group hover:shadow-md ease-in transition-shadow"
                 >
                   <span className=" text-white text-sm whitespace-nowrap">
                     Explore GTD Service GTIS
                   </span>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/api-development-and-integration-company"
                   className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-700 text-white shadow-lg shadow-blue-500 hover:shadow-md ease-in transition-shadow flex items-center group justify-center"
                 >
                   <span className=" text-white text-sm whitespace-nowrap">
                     Get API Access
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mb-10 md:mb-0 order-1 md:order-2">
@@ -364,13 +364,13 @@ competitive in the global market.
               <span className="bg-blue-100 w-max text-blue-800 text-sm font-medium me-2 px-4 py-0.5 rounded-full">
                 EXPORTER
               </span>
-              <a
+              <Link
                 href="/exporters"
                 className="font-bold text-xl group-hover:text-blue-700 ease-linear line-clamp-2 transition-colors"
               >
                 Enhance Your Sales Potential with Our Global Exporters Database
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/exporters"
                 className="line-clamp-1 text-base font-medium text-gray-700 flex items-center gap-3 hover:text-orange-500"
               >
@@ -387,7 +387,7 @@ competitive in the global market.
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="flex group flex-col gap-4">
               <img
@@ -399,13 +399,13 @@ competitive in the global market.
               <span className="bg-blue-100 w-max text-blue-800 text-sm font-medium me-2 px-4 py-0.5 rounded-full">
                 IMPORTER
               </span>
-              <a
+              <Link
                 href="/importers"
                 className="font-bold text-xl group-hover:text-blue-700 ease-linear line-clamp-2 transition-colors"
               >
                 Leading Trade Intelligence Platform for Global Importers
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/importers"
                 className="line-clamp-1 text-base font-medium text-gray-700 flex items-center gap-3 hover:text-orange-500"
               >
@@ -422,7 +422,7 @@ competitive in the global market.
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="flex group flex-col gap-4">
               <img
@@ -434,13 +434,13 @@ competitive in the global market.
               <span className="bg-blue-100 w-max text-blue-800 text-sm font-medium me-2 px-4 py-0.5 rounded-full">
                 Automotive
               </span>
-              <a
+              <Link
                 href="/automative"
                 className="font-bold text-xl group-hover:text-blue-700 ease-linear line-clamp-2 transition-colors"
               >
                 Identify the Current Market Trends & Demands in the Automotive
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/automative"
                 className="line-clamp-1 text-base font-medium text-gray-700 flex items-center gap-3 hover:text-orange-500"
               >
@@ -457,7 +457,7 @@ competitive in the global market.
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -490,14 +490,14 @@ understand the <b>global trade volume</b> better.
 
               </p>
               <div className="flex mt-5 gap-3">
-                <a
+                <Link
                   href="/about"
                   className="rounded-xl px-5 py-3 mybtn font-semibold linerotate flex items-center shadow-lg shadow-gray-800 group hover:shadow-md ease-in transition-shadow"
                 >
                   <span className=" text-white text-sm whitespace-nowrap">
                     Read More...
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="globe">
@@ -703,14 +703,14 @@ you can observe market trends, streamline supply chains and make informed decisi
 growth.
               </p>
               <div className="flex mt-5">
-                <a
+                <Link
                   href="/pricing"
                   className="rounded-xl px-5 py-3 mybtn font-semibold linerotate flex items-center group"
                 >
                   <span className=" text-white text-sm whitespace-nowrap">
                     Schedule a Demo
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 export async function POST(req) {
     const body = await req.json();
     debugger;
-    const res = await fetch('http://103.30.72.94:8001/countriesProductList', {
+    const res = await fetch('http://103.30.72.94:8011/countriesProductList', {
         
       method: 'POST',
       headers: {

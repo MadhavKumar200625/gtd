@@ -812,15 +812,14 @@ const hs_search_click = (code, type) => {
   
   const countrySlug = 'usa';
   const typeSlug = type;
-  const combinedText = `hscode=${code}`;
+  const combinedText = `hs-${code}`;
 
-  const encodedText = code 
-    ? encodeURIComponent(btoa(combinedText))
-    : null;
+  // const encodedText = code 
+  //   ? encodeURIComponent(btoa(combinedText))
+  //   : null;
 
-  const url = encodedText
-    ? `/search/${countrySlug}/${typeSlug}/${encodedText}`
-    : `/search/${countrySlug}/${typeSlug}`;
+  const url = `/search/${countrySlug}/${typeSlug}/${combinedText}`
+    // : `/search/${countrySlug}/${typeSlug}`;
 
   router.push(url);
 };
