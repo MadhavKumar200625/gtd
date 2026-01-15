@@ -57,7 +57,7 @@ export default function ClientPage({ Country }) {
                 type: "master",
                 country_name: selectedCountry1.replaceAll('_', ' ').toLowerCase(),
                 from_: (currentPage - 1) * 8 + 1,
-                to: "8"
+                to: 8
             }),
         });
 
