@@ -58,126 +58,11 @@ const page = () => {
       />
 
       <section className="py-20">
-        <div className="container mx-auto px-4 md:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div>
-              <h3 className="mx-auto mb-2 text-balance text-2xl font-bold leading-snug tracking-normal">
-                Information
-              </h3>
-              <div className="px-4 py-5 bg-pink-50 rounded-lg flex gap-3 mb-3">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="size-10 stroke-blue-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h6 className="font-bold text-lg">
-                    {/* Shpere Eximia Research Pvt Ltd */}
-                    GTD SOLUTIONS LLC
-                  </h6>
-                   <p className="text-base text-gray-700">
-                   <span>REGISTERED AGENTS INC.</span><br />
-                    <span>418 BROADWAY</span><br />
-                    <span>STE R</span><br />
-                    <span>ALBANY, NY 12207</span>
-                  </p> 
-                </div>
-              </div>
-              <div className="px-4 py-5 bg-orange-50 rounded-lg flex gap-3 mb-3">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="size-10 stroke-blue-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h6 className="font-bold text-lg">Telephone</h6>
-                  <a
-                    href="tel:+1 262-924-6437"
-                    className="text-base text-gray-700"
-                  >
-                    +1 262-924-6437
-                  </a>
-                </div>
-              </div>
-              {/* <div className="px-4 py-5 bg-orange-50 rounded-lg flex gap-3 mb-3">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="size-10 stroke-blue-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M20.52 3.48A11.78 11.78 0 0 0 1.73 16.71L1 22.25l5.66-1.49a11.77 11.77 0 0 0 5.71 1.46h.01a11.78 11.78 0 0 0 8.14-20.74ZM12.38 20a9.86 9.86 0 0 1-5.05-1.37l-.36-.21-3.36.89.9-3.28-.24-.34a9.81 9.81 0 1 1 8.11 4.31Zm5.43-7.43c-.3-.15-1.75-.87-2.02-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.34.22-.63.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.5.07-.76.38-.26.3-1 1-1 2.42s1.02 2.8 1.17 3c.15.2 2 3.15 4.85 4.42.68.29 1.2.46 1.61.59.67.21 1.28.18 1.76.11.54-.08 1.75-.71 2-1.4.25-.7.25-1.29.17-1.4-.07-.1-.27-.16-.57-.3Z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h6 className="font-bold text-lg">Whatsapp</h6>
-                  <a
-                    href="tel:+1 469-887-2343"
-                    className="text-base text-gray-700"
-                  >
-                    +1 469-887-2343
-                  </a>
-                </div>
-              </div> */}
-              
-              <div className="px-4 py-5 bg-purple-50 rounded-lg flex gap-3">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="size-10 stroke-blue-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                    />
-                  </svg>
-                </div>
-                <div> 
-                  <h6 className="font-bold text-lg">Email</h6>
-                  <a
-                    href="mailto:support@gtdservice.com"
-                    className="text-base text-gray-700"
-                  >
-                    support@gtdservice.com
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="md:col-span-2">
+  <div className="container mx-auto px-4 md:px-0">
+
+    {/* ================= FORM ON TOP ================= */}
+    
+    <div className="max-w-4xl mx-auto mb-16">
               <h3 className="mx-auto mb-2 text-balance text-2xl font-bold leading-snug tracking-normal">
                 Send a Message
               </h3>
@@ -314,9 +199,132 @@ const page = () => {
                 </button>
               </div>
             </div>
+
+    {/* ================= ADDRESSES BELOW ================= */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      {/* ================= USA OFFICE ================= */}
+      <div>
+        <h3 className="mb-3 text-2xl font-bold tracking-normal">
+          USA Office
+        </h3>
+
+        <div className="px-4 py-5 bg-pink-50 rounded-lg flex gap-3 mb-3">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-10 stroke-blue-600">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21" />
+            </svg>
+          </div>
+          <div>
+            <h6 className="font-bold text-lg">GTD SOLUTIONS LLC</h6>
+            <p className="text-gray-700 text-sm">
+              REGISTERED AGENTS INC.<br />
+              418 BROADWAY, STE R<br />
+              ALBANY, NY 12207
+            </p>
           </div>
         </div>
-      </section>
+
+        <div className="px-4 py-5 bg-orange-50 rounded-lg flex gap-3 mb-3">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-10 stroke-blue-600">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25" />
+            </svg>
+          </div>
+          <div>
+            <h6 className="font-bold text-lg">Telephone</h6>
+            <a href="tel:+12629246437" className="text-gray-700 text-sm">
+              +1 262-924-6437
+            </a>
+          </div>
+        </div>
+
+        <div className="px-4 py-5 bg-purple-50 rounded-lg flex gap-3">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-10 stroke-blue-600">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5" />
+            </svg>
+          </div>
+          <div>
+            <h6 className="font-bold text-lg">Email</h6>
+            <a href="mailto:support@gtdservice.com" className="text-gray-700 text-sm">
+              support@gtdservice.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* ================= INDIA OFFICE ================= */}
+      <div>
+  <h3 className="mb-3 text-2xl font-bold tracking-normal">
+    India Office
+  </h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+    {/* ===== LEFT COLUMN ===== */}
+    <div className="space-y-3">
+
+      {/* Ahmedabad */}
+      <div className="px-4 py-5 bg-blue-50 rounded-lg">
+        <h6 className="font-bold text-lg mb-1">Ahmedabad</h6>
+        <p className="text-gray-700 text-sm">
+          Palladium Business Hub, 504–505,<br />
+          Mahavirnagar, Harikurpa Society,<br />
+          Motera, Ahmedabad, Gujarat 382424
+        </p>
+      </div>
+
+      {/* Noida */}
+      <div className="px-4 py-5 bg-blue-50 rounded-lg">
+        <h6 className="font-bold text-lg mb-1">Noida</h6>
+        <p className="text-gray-700 text-sm">
+          G-232, Sector-63,<br />
+          Noida, Uttar Pradesh – 201301,<br />
+          India
+        </p>
+      </div>
+
+    </div>
+
+    {/* ===== RIGHT COLUMN ===== */}
+    <div className="space-y-3">
+
+      <div className="px-4 py-5 bg-green-50 rounded-lg">
+        <h6 className="font-bold text-lg">Sales</h6>
+        <p className="text-sm text-gray-700">
+          +91 93287 93095<br />
+          sale1@gtdservice.com<br />
+          sale2@gtdservice.com
+        </p>
+      </div>
+
+      <div className="px-4 py-5 bg-yellow-50 rounded-lg">
+        <h6 className="font-bold text-lg">Support</h6>
+        <p className="text-sm text-gray-700">
+          +91 93156 19475<br />
+          support@gtdservice.com
+        </p>
+      </div>
+
+      <div className="px-4 py-5 bg-indigo-50 rounded-lg">
+        <h6 className="font-bold text-lg">Other Queries</h6>
+        <p className="text-sm text-gray-700">
+          +91 93156 19475<br />
+          info@gtdservice.com
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+</section>
     </>
   );
 };

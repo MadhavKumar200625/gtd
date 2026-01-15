@@ -511,7 +511,7 @@ understand the <b>global trade volume</b> better.
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="size-10 fill-emerald-200"
+                  className="size-10 fill-emerald-400"
                 >
                   <path
                     fillRule="evenodd"
@@ -520,7 +520,7 @@ understand the <b>global trade volume</b> better.
                   />
                 </svg>
               </div>
-              <p className="text-gray-200">
+              <p className="text-black">
                 Improves your export-import trade with data-based decisions and avoids risk.
               </p>
             </div>
@@ -530,7 +530,7 @@ understand the <b>global trade volume</b> better.
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="size-10 fill-emerald-200"
+                  className="size-10 fill-emerald-400"
                 >
                   <path
                     fillRule="evenodd"
@@ -539,7 +539,7 @@ understand the <b>global trade volume</b> better.
                   />
                 </svg>
               </div>
-              <p className="text-gray-200">
+              <p className="text-black">
                 Align your business model with global strategic planning and stay ahead.
               </p>
             </div>
@@ -549,7 +549,7 @@ understand the <b>global trade volume</b> better.
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="size-10 fill-emerald-200"
+                  className="size-10 fill-emerald-400"
                 >
                   <path
                     fillRule="evenodd"
@@ -558,7 +558,7 @@ understand the <b>global trade volume</b> better.
                   />
                 </svg>
               </div>
-              <p className="text-gray-200">
+              <p className="text-black">
                 Monitor and track competition and grab upcoming business opportunities.
               </p>
             </div>
@@ -568,7 +568,7 @@ understand the <b>global trade volume</b> better.
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="size-10 fill-emerald-200"
+                  className="size-10 fill-emerald-400"
                 >
                   <path
                     fillRule="evenodd"
@@ -577,7 +577,7 @@ understand the <b>global trade volume</b> better.
                   />
                 </svg>
               </div>
-              <p className="text-gray-200">
+              <p className="text-black">
                 GTD Service is equipped with the latest business intelligence website for data.
               </p>
             </div>
@@ -689,13 +689,13 @@ understand the <b>global trade volume</b> better.
               <h3 className="text-4xl font-bold leading-normal">
               Grow with GTD Services
               </h3>
-              <p className="text-base text-gray-400 mb-4">
+              <p className="text-base text-black mb-4">
               As we are trusted worldwide export imports data provider and offering historical data access,
 updated shipment records and detailed trade reports all around the globe, enterprises should grow
 their businesses with us.
 
               </p>
-              <p className="text-base text-gray-400">
+              <p className="text-base text-black">
               You can discover new opportunities through our powerful trade analytics data and trade volume data
 based on real time analysis of global import trade data and global export trade data. Using our huge
 export import database, you will be able to monitor both global import data and export data so that
