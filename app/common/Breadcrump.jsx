@@ -5,6 +5,7 @@ const Breadcrump = ({ pageName, peragraph, subPage, heading }) => {
   return (
     <>
       <section className="flex items-center overflow-hidden relative bg-gradient-to-br from-blue-100 via-indigo-100 to-yellow-100 bg-gradient-45 bg-opacity-50">
+        
         <div className="absolute top-0 w-full h-screen z-0 opacity-20">
           <img src="/images/dots.png" className="w-full" alt="" />
         </div>
