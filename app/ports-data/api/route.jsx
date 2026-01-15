@@ -1,6 +1,7 @@
 export async function POST(req) {
     const body = await req.json();
     debugger;
+    console.log(body)
     const res = await fetch('http://103.30.72.94:8001/globalPortLoading', {
         
       method: 'POST',
