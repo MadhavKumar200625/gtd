@@ -53,7 +53,8 @@ export default function ClientPage({ Country }) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                source: final_country.replaceAll(' ', '_').toLowerCase(),
+                // source: final_country.replaceAll(' ', '_').toLowerCase(),
+                source:"all",
                 type: "master",
                 country_name: selectedCountry1.replaceAll('_', ' ').toLowerCase(),
                 from_: ((currentPage - 1) * 8 + 1).toString(),
