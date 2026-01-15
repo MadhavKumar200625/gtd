@@ -47,6 +47,7 @@ export default function ClientPage({ Country }) {
     const getData = async () => {
 
         const res = await fetch('../../../ports-data/api', {
+            
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
