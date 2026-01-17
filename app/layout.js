@@ -9,6 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Script from "next/script";
 import GTagScripts from '../components/GTagScripts';
 import Analytics from '../components/Analytics'
+import { GlobalLinkLoader } from "@/components/GlobalLinkLoader";
+import LoaderHandler from "@/components/LoaderHandler";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -84,6 +86,11 @@ export default function RootLayout({ children }) {
         </noscript> */}
         <GTagScripts />
         <Analytics />
+<div id="top-loader"></div>
+        <GlobalLinkLoader />
+
+        <LoaderHandler />
+
         <Header />
  
         {children}
