@@ -86,7 +86,7 @@ export default function RootLayout({ children }) {
         </noscript> */}
         <GTagScripts />
         <Analytics />
-<div id="top-loader"></div>
+        <div id="top-loader"></div>
         <GlobalLinkLoader />
 
         <LoaderHandler />
