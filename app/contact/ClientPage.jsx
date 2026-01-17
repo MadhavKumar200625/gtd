@@ -372,7 +372,6 @@ const page = () => {
       <div className="px-4 py-5 bg-green-50 rounded-lg">
         <h6 className="font-bold text-lg">Sales</h6>
         <p className="text-sm text-gray-700">
-          +91 93287 93095<br />
           sale1@gtdservice.com<br />
           sale2@gtdservice.com
         </p>
