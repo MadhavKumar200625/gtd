@@ -372,6 +372,7 @@ const page = () => {
       <div className="px-4 py-5 bg-green-50 rounded-lg">
         <h6 className="font-bold text-lg">Sales</h6>
         <p className="text-sm text-gray-700">
+          +91 93287 93095<br />
           sale1@gtdservice.com<br />
           sale2@gtdservice.com
         </p>
@@ -380,7 +381,6 @@ const page = () => {
       <div className="px-4 py-5 bg-yellow-50 rounded-lg">
         <h6 className="font-bold text-lg">Support</h6>
         <p className="text-sm text-gray-700">
-          +91 93156 19475<br />
           support@gtdservice.com
         </p>
       </div>
@@ -388,7 +388,6 @@ const page = () => {
       <div className="px-4 py-5 bg-indigo-50 rounded-lg">
         <h6 className="font-bold text-lg">Other Queries</h6>
         <p className="text-sm text-gray-700">
-          +91 93156 19475<br />
           info@gtdservice.com
         </p>
       </div>
