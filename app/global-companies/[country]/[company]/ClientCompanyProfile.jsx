@@ -3,8 +3,11 @@
 import { useEffect, useState } from "react";
 import Breadcrump from "../../../common/Breadcrump";
 import Link from "next/link";
+import UnlockDataForm from "@/components/UnlockDataForm";
 
 export default function ClientCompanyProfile({ country, company }) {
+    const [showUnlockForm, setShowUnlockForm] = useState(false);
+
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [activeIndex, setActiveIndex] = useState(1);
@@ -96,46 +99,17 @@ export default function ClientCompanyProfile({ country, company }) {
                                 Summary
                             </span>
                         </div>
-                        <a
-                            href=""
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Buyers
-                            </span>
-                        </a>
-                        <a
-                            href=""
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Suppliers
-                            </span>
-                        </a>
-                        <a
-                            href=""
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Shipments
-                            </span>
-                        </a>
-                        <a
-                            href=""
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Products
-                            </span>
-                        </a>
-                        <a
-                            href=""
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Contact
-                            </span>
-                        </a>
+                       {["Buyers", "Suppliers", "Shipments", "Products", "Contact"].map((item) => (
+    <div
+        key={item}
+        onClick={() => setShowUnlockForm(true)}
+        className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white shadow-blue-500 flex items-center group cursor-pointer"
+    >
+        <span className="text-white text-sm whitespace-nowrap">
+            {item}
+        </span>
+    </div>
+))}
                     </div>
 
                     <div className="mt-8 p-4 shadow-lg rounded-xl">
@@ -829,6 +803,11 @@ export default function ClientCompanyProfile({ country, company }) {
                     </div>
                 </div>
             </section>
+            <UnlockDataForm
+                    isOpen={showUnlockForm}
+                    onClose={() => setShowUnlockForm(false)}
+                    country={country}
+                  />
         </>
     );
 }

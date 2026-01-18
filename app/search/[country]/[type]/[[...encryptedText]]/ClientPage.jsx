@@ -13,6 +13,7 @@ import "flag-icons/css/flag-icons.min.css";
 import { country_all, country_cus } from '../../../../../data/countries';
 import { stringify } from 'postcss';
 import { useRouter } from 'next/navigation';
+import UnlockDataForm from '@/components/UnlockDataForm';
 
 const fetchData = async (payload) => {
   //alert('A');
@@ -31,6 +32,7 @@ const fetchData = async (payload) => {
 const ClientPage = () => {
   const router = useRouter();
   const params = useParams();
+  const [showUnlockForm, setShowUnlockForm] = useState(false);
   const { country, type, encryptedText= [] } = params;
   const [product, setProduct] = useState("");
   const [hscode, setHscode] = useState("");
@@ -993,9 +995,9 @@ const ClientPage = () => {
                 <p className="mt-10">Loading data...</p>
               ) : (
                 <div className="relative overflow-x-auto w-full shadow-md sm:rounded-lg">
-                  <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 overflow-visible">
+                  <table className="w-full text-sm text-left rtl:text-right text-black dark:text-gray-400 overflow-visible">
 
-                    <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
+                    <thead className="text-xs text-gray-700 uppercase ">
                       <tr>
                         <th scope="col" className="px-6 py-3 border-b bg-gray-50">
                           DATE
@@ -1024,11 +1026,14 @@ const ClientPage = () => {
                         <th scope="col" className="px-6 py-3 border-b bg-gray-50">
                           {type == "import" ? ("PORT OF UNLOADING") : ("PORT OF LOADING")}
                         </th>
+                        <th scope="col" className="px-6 py-3 border-b">
+  ACTION
+</th>
                       </tr>
                     </thead>
                     <tbody>
                       {data.map((item, i) => (
-                        <tr key={i} className="border-b border-gray-200 dark:border-gray-700">
+                        <tr key={i} className="border-b text-black border-gray-200 dark:border-gray-700">
                           <td className="p-2 text-sm">{item._source.date}</td>
                           <td className="p-2 text-sm">{item._source.hs_code}</td>
                           <td className="p-2 text-sm bg-gray-50 max-w-36 relative group">
@@ -1055,6 +1060,14 @@ const ClientPage = () => {
                         )} */}
                           <td className="p-2 text-sm">{type == "import" ? (item._source.origin_country) : (item._source.destination_country)}</td>
                           <td className="p-2 text-sm bg-gray-50">{type == "import" ? (item._source.Port_of_Unloading) : (item._source.Port_of_Loading)}</td>
+                          <td className="p-2 text-sm text-center">
+  <button
+    onClick={() => setShowUnlockForm(true)}
+    className="px-4 py-2 text-xs font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 cursor-pointer"
+  >
+    Unlock Full Data
+  </button>
+</td>
                         </tr>
                       ))}
                     </tbody>
@@ -1068,12 +1081,11 @@ const ClientPage = () => {
                 className="flex items-center gap-x-1 mt-3"
                 aria-label="Pagination"
               >
-                <a
-
-                  className="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                <div
+onClick={()=>{setShowUnlockForm(true)}}
+                  className="min-h-[38px] min-w-[38px] cursor-pointer py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                   aria-label="Previous"
                   disabled=""
-                  href={`https://gtdservice.com/contact`}
                 >
                   <svg
                     className="shrink-0 size-3.5"
@@ -1089,8 +1101,8 @@ const ClientPage = () => {
                   >
                     <path d="m15 18-6-6 6-6"></path>
                   </svg>
-                  <span>Previous</span>
-                </a>
+                  <span >Previous</span>
+                </div>
                 <div className="flex items-center gap-x-1">
                   <a
                     href={`https://gtdservice.com/contact`}
@@ -1099,23 +1111,23 @@ const ClientPage = () => {
                   >
                     1
                   </a>
-                  <a
-                    href={`https://gtdservice.com/contact`}
-                    className="min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                  <div
+                    onClick={()=>{setShowUnlockForm(true)}}
+                    className="min-h-[38px] min-w-[38px] cursor-pointer flex justify-center items-center text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                     aria-current="page"
                   >
                     2
-                  </a>
-                  <a
-                    href={`https://gtdservice.com/contact`}
-                    className="min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                  </div>
+                  <div
+                    onClick={()=>{setShowUnlockForm(true)}}
+                    className="min-h-[38px] min-w-[38px] flex cursor-pointer justify-center items-center text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                   >
                     3
-                  </a>
+                  </div>
                 </div>
-                <a
-                  href={`https://gtdservice.com/contact`}
-                  className="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                <div
+                  onClick={()=>{setShowUnlockForm(true)}}
+                  className="min-h-[38px] min-w-[38px] cursor-pointer py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                   aria-label="Next"
                 >
                   <span>Next</span>
@@ -1133,7 +1145,7 @@ const ClientPage = () => {
                   >
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>
-                </a>
+                </div>
               </nav>
               {/* <!-- End Pagination --> */}
             </div>
@@ -1244,6 +1256,11 @@ const ClientPage = () => {
       </section>
 
       <CTA />
+      <UnlockDataForm
+                          isOpen={showUnlockForm}
+                          onClose={() => setShowUnlockForm(false)}
+                          country={country}
+                        />
     </>
   );
 }

@@ -5,10 +5,12 @@ import Breadcrump from "../../common/Breadcrump";
 import Link from "next/link";
 //import { useSearchParams } from 'next/navigation';
 import "flag-icons/css/flag-icons.min.css";
+import UnlockDataForm from "@/components/UnlockDataForm";
 
 export default function ClientPage({ country, port }) {
     console.log("Country:", country);
     console.log("Port:", port);
+    const [showUnlockForm, setShowUnlockForm] = useState(false);
 
     const lowerCountry = country?.replace(/\s+/g, "_").toLowerCase() || "india";
     const formattedPort = port?.replaceAll("-", " ").toUpperCase() || "NA";
@@ -121,46 +123,17 @@ export default function ClientPage({ country, port }) {
                                 Summary
                             </span>
                         </div>
-                        <a
-                            href="/pricing"
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Buyers
-                            </span>
-                        </a>
-                        <a
-                            href="/pricing"
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Suppliers
-                            </span>
-                        </a>
-                        <a
-                            href="/pricing"
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Shipments
-                            </span>
-                        </a>
-                        <a
-                            href="/pricing"
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Products
-                            </span>
-                        </a>
-                        <a
-                            href="/pricing"
-                            className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white  shadow-blue-500 flex items-center group"
-                        >
-                            <span className=" text-white text-sm whitespace-nowrap">
-                                Contact
-                            </span>
-                        </a>
+                        {["Buyers", "Suppliers", "Shipments", "Products", "Contact"].map((item) => (
+    <div
+        key={item}
+        onClick={() => setShowUnlockForm(true)}
+        className="rounded-xl px-5 py-3 mybtn font-semibold bg-blue-300 text-white shadow-blue-500 flex items-center group cursor-pointer"
+    >
+        <span className="text-white text-sm whitespace-nowrap">
+            {item}
+        </span>
+    </div>
+))}
                     </div>
 
                     <div className="mt-8 p-4 shadow-lg rounded-xl">
@@ -754,6 +727,12 @@ export default function ClientPage({ country, port }) {
                 </div>
             </section>
             {/* ----------------------CTA End------------------------- */}
+
+            <UnlockDataForm
+        isOpen={showUnlockForm}
+        onClose={() => setShowUnlockForm(false)}
+        country={country}
+      />
         </>
     );
 }
