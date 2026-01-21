@@ -11,6 +11,7 @@ import GTagScripts from '../components/GTagScripts';
 import Analytics from '../components/Analytics'
 import { GlobalLinkLoader } from "@/components/GlobalLinkLoader";
 import LoaderHandler from "@/components/LoaderHandler";
+import AllPageForm from "@/components/AllPageForm";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -92,8 +93,9 @@ export default function RootLayout({ children }) {
         <LoaderHandler />
 
         <Header />
- 
+ <AllPageForm></AllPageForm>
         {children}
+        
         <Footer />
       </body>
     </html>
