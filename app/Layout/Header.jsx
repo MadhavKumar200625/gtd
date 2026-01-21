@@ -32,7 +32,7 @@ const Header = () => {
       >
         <header className="container mx-auto py-1 flex items-center justify-between">
           <a href="/" className="font-bold text-white text-xl">
-            <img src="/images/logo.svg" className="w-[145px]" alt="GTD Service Logo" title="GTD Service Logo"/>
+            <img src="/images/gtd-logo.png" className="w-[145px]" alt="GTD Service Logo" title="GTD Service Logo"/>
           </a>
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-3 justify-center font-semibold">
