@@ -262,200 +262,208 @@ const validate = () => {
 };
 
   return (
-    <div
-  className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center px-4"
-  onClick={onClose}
->
-      <div
-  ref={ref}
-  onClick={(e) => e.stopPropagation()}
-  className="bg-slate-50 w-full max-w-md rounded-2xl shadow-2xl p-6 animate-slideUp relative"
->
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-black"
-        >
-          <X size={22} />
-        </button>
-
-        <h2 className="text-2xl font-semibold text-center mb-1">
-          Talk to a Trade Data Expert
-
-        </h2>
-        <p className="text-center text-gray-600 mb-5">
-          Connect with our trade data experts for quick answers.
-        </p>
-
-        <form onSubmit={submit} className="space-y-4">
-          <Input
-  label="Name"
-  placeholder="Enter your full name"
-  error={errors.name}
-  onChange={(e) => {
-    setForm({ ...form, name: e.target.value });
-    setErrors({ ...errors, name: "" });
-  }}
-/>
-
-          <Input
-  label="Email"
-  type="email"
-  placeholder="Enter your email address"
-  error={errors.email}
-  onChange={(e) => {
-    setForm({ ...form, email: e.target.value });
-    setErrors({ ...errors, email: "" });
-  }}
-/>
-
-          {/* Phone with country code */}
-          <div>
-  <label className="block text-sm font-medium mb-1">
-    Phone / WhatsApp 
-  </label>
-
   <div
-    className={`relative flex ${
-      errors.phone ? "ring-1 ring-red-500 rounded-lg" : ""
-    }`}
+    className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-md px-4"
+    onClick={onClose}
   >
-    {/* Country code button */}
-    <button
-      type="button"
-      onClick={() => setShowCodeDropdown((v) => !v)}
-      className="flex items-center gap-2 px-3 pr-5 py-2 border rounded-l-lg bg-gray-50"
+    <div
+      ref={ref}
+      onClick={(e) => e.stopPropagation()}
+      className="relative w-full max-w-md rounded-3xl bg-white/80 backdrop-blur-xl shadow-[0_30px_80px_rgba(0,0,0,0.25)] border border-white/40 animate-slideUp"
     >
-      <img
-        src={
-          Object.values(countryCodes).find(
-            (c) => c.code === countryCode
-          )?.flag
-        }
-        className="w-5 h-4"
-        alt=""
-      />
-      <span className="text-sm">{countryCode}</span>
-    </button>
+      {/* Close */}
+      <button
+        onClick={onClose}
+        className="absolute top-5 right-5 rounded-full p-2 text-gray-500 hover:text-black hover:bg-black/5 transition"
+      >
+        <X size={20} />
+      </button>
 
-    {/* Phone input */}
-    <input
-  type="tel"
-  placeholder="Phone or WhatsApp number"
-  inputMode="numeric"
-  pattern="[0-9]*"
-  onChange={(e) => {
-    const onlyNumbers = e.target.value.replace(/\D/g, "");
-    setForm({ ...form, phone: onlyNumbers });
-    setErrors({ ...errors, phone: "" });
-  }}
-  className="w-full border-t border-b border-r rounded-r-lg px-3 py-2 text-sm outline-none"
-/>
+      {/* Header */}
+      <div className="px-8 pt-10 text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+          Trade Expert Connect
+        </h2>
+        <p className="mt-2 text-sm text-gray-600">
+          Get precise trade insights directly from our specialists
+        </p>
+      </div>
 
-{showCodeDropdown && (
-  <div className="absolute top-full left-0 mt-1 w-32 bg-white border rounded-xl shadow-xl z-50">
-    {/* Search */}
-    <input
-      type="text"
-      placeholder="Search country or code"
-      value={codeSearch}
-      onChange={(e) => setCodeSearch(e.target.value)}
-      className="w-full px-3 py-2 text-sm border-b outline-none"
-      autoFocus
-    />
+      {/* Form */}
+      <form onSubmit={submit} className="px-8 pb-8 pt-6 space-y-5">
+        <Input
+          label="Full Name"
+          placeholder="John Doe"
+          error={errors.name}
+          onChange={(e) => {
+            setForm({ ...form, name: e.target.value });
+            setErrors({ ...errors, name: "" });
+          }}
+        />
 
-    {/* List */}
-    <div className="max-h-50 overflow-y-auto">
-      {Object.entries(countryCodes)
-        .filter(([name, data]) => {
-          const q = codeSearch.toLowerCase();
-          return (
-            name.replace(/_/g, " ").toLowerCase().includes(q) ||
-            data.code.includes(q)
-          );
-        })
-        .map(([name, data]) => (
-          <button
-            key={name}
-            type="button"
-            onClick={() => {
-              setCountryCode(data.code);
-              setShowCodeDropdown(false);
-              setCodeSearch("");
-            }}
-            className="w-full flex items-center gap-3 px-3 py-2 hover:bg-blue-50 transition text-sm"
+        <Input
+          label="Email Address"
+          type="email"
+          placeholder="john@email.com"
+          error={errors.email}
+          onChange={(e) => {
+            setForm({ ...form, email: e.target.value });
+            setErrors({ ...errors, email: "" });
+          }}
+        />
+
+        {/* Phone */}
+        <div>
+          <label className="block text-sm font-medium mb-2 text-gray-700">
+            Phone / WhatsApp
+          </label>
+
+          <div
+            className={`relative flex rounded-xl  bg-white shadow-sm border ${
+              errors.phone ? "border-red-500" : "border-gray-200"
+            }`}
           >
-            <img
-              src={data.flag}
-              alt=""
-              className="w-6 h-4 rounded-sm"
-              loading="lazy"
+            {/* Country Code */}
+            <button
+              type="button"
+              onClick={() => setShowCodeDropdown((v) => !v)}
+              className="flex items-center gap-2 px-4 bg-gray-50 hover:bg-gray-100 transition"
+            >
+              <img
+                src={
+                  Object.values(countryCodes).find(
+                    (c) => c.code === countryCode
+                  )?.flag
+                }
+                className="w-5 h-4 rounded-sm"
+                alt=""
+              />
+              <span className="text-sm font-medium">
+                {countryCode}
+              </span>
+            </button>
+
+            {/* Input */}
+            <input
+              type="tel"
+              placeholder="9876543210"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              onChange={(e) => {
+                const onlyNumbers = e.target.value.replace(/\D/g, "");
+                setForm({ ...form, phone: onlyNumbers });
+                setErrors({ ...errors, phone: "" });
+              }}
+              className="flex-1 px-4 py-3 text-sm outline-none"
             />
-            <span className="ml-auto font-medium text-gray-700">
-              {data.code}
-            </span>
-          </button>
-        ))}
-    </div>
-  </div>
-)}
-  </div>
 
-  {errors.phone && (
-    <p className="text-xs text-red-500 mt-1">
-      {errors.phone}
-    </p>
-  )}
-</div>
+            {/* Dropdown */}
+            {showCodeDropdown && (
+              <div className="absolute top-full left-0 mt-2 w-40 h-64 bg-white rounded-2xl shadow-2xl border z-50 ">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  value={codeSearch}
+                  onChange={(e) => setCodeSearch(e.target.value)}
+                  className="w-full px-4 py-2 text-sm border-b outline-none"
+                  autoFocus
+                />
 
-          <div>
-            <label className="block text-sm font-medium mb-1">
-              How can we help you today?
-
-            </label>
-            <textarea
-              placeholder="How can we help you today?
-"
-              onChange={(e) =>
-                setForm({ ...form, message: e.target.value })
-              }
-              className="w-full h-24 border rounded-lg px-3 py-2 text-sm"
-            />
+                <div className="max-h-52 overflow-y-auto">
+                  {Object.entries(countryCodes)
+                    .filter(([name, data]) => {
+                      const q = codeSearch.toLowerCase();
+                      return (
+                        name.replace(/_/g, " ").toLowerCase().includes(q) ||
+                        data.code.includes(q)
+                      );
+                    })
+                    .map(([name, data]) => (
+                      <button
+                        key={name}
+                        type="button"
+                        onClick={() => {
+                          setCountryCode(data.code);
+                          setShowCodeDropdown(false);
+                          setCodeSearch("");
+                        }}
+                        className="w-full flex items-center gap-3 px-4 py-2 hover:bg-blue-50 transition text-sm"
+                      >
+                        <img
+                          src={data.flag}
+                          alt=""
+                          className="w-6 h-4 rounded-sm"
+                        />
+                        <span className="ml-auto font-semibold text-gray-700">
+                          {data.code}
+                        </span>
+                      </button>
+                    ))}
+                </div>
+              </div>
+            )}
           </div>
 
-          <button
-  disabled={loading}
-  className={`w-full py-3 rounded-2xl font-semibold text-black transition-all duration-300
-    ${
-      loading
-        ? "bg-blue-300 cursor-not-allowed"
-        : "bg-gradient-to-r from-blue-200 via-blue-300 to-indigo-400 hover:from-blue-200 hover:to-indigo-500 shadow-md hover:shadow-lg active:scale-[0.98]"
-    }`}
->
-  {loading ? "Sending..." : "Start Conversation"}
-</button>
+          {errors.phone && (
+            <p className="text-xs text-red-500 mt-1">
+              {errors.phone}
+            </p>
+          )}
+        </div>
 
-          <p className="text-center text-sm text-gray-500">
-            You&apos;ll receive a response on WhatsApp or email shortly.
+        {/* Message */}
+        <div>
+          <label className="block text-sm font-medium mb-2 text-gray-700">
+            Your Requirement
+          </label>
+          <textarea
+            placeholder="Tell us what trade data you&apos;re looking for..."
+            onChange={(e) =>
+              setForm({ ...form, message: e.target.value })
+            }
+            className="w-full h-28 rounded-xl bg-white border border-gray-200 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-blue-400/40"
+          />
+        </div>
 
-          </p>
-        </form>
-      </div>
+        {/* CTA */}
+        <button
+          disabled={loading}
+          className={`w-full rounded-full py-4 font-semibold transition-all duration-300
+            ${
+              loading
+                ? "bg-blue-300 text-white cursor-not-allowed"
+                : "bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-400 text-white shadow-lg shadow-blue-500/30 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
+            }`}
+        >
+          {loading ? "Sending..." : "Start Conversation"}
+        </button>
+
+        <p className="text-center text-xs text-gray-500 mt-3">
+          We usually respond within minutes via WhatsApp or email.
+        </p>
+      </form>
     </div>
-  );
+  </div>
+);
 }
 
 function Input({ label, error, ...props }) {
   return (
     <div>
-      <label className="block text-sm font-medium mb-1">
+      <label className="block text-sm font-medium mb-2 text-gray-700">
         {label}
       </label>
+
       <input
         {...props}
-        className={`w-full border rounded-lg px-3 py-2 text-sm ${
-          error ? "border-red-500" : ""
-        }`}
+        className={`w-full rounded-xl px-4 py-3 text-sm bg-white border outline-none transition
+          ${
+            error
+              ? "border-red-500 focus:ring-2 focus:ring-red-400/30"
+              : "border-gray-200 focus:ring-2 focus:ring-blue-400/40"
+          }`}
       />
+
       {error && (
         <p className="text-xs text-red-500 mt-1">
           {error}

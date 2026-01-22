@@ -240,190 +240,206 @@ export default function UnlockDataForm({ isOpen, onClose, country }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-      <div className="bg-white w-full max-w-3xl rounded-2xl shadow-xl p-6 relative">
-        {/* Close */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 cursor-pointer right-4 text-gray-400 hover:text-black"
-        >
-          <X size={22} />
-        </button>
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-black/70 via-black/50 to-black/70 backdrop-blur-md px-4">
+    <div className="relative w-full max-w-3xl rounded-3xl bg-white/85 backdrop-blur-xl shadow-[0_40px_90px_rgba(0,0,0,0.3)] border border-white/40">
+      {/* Close */}
+      <button
+        onClick={onClose}
+        className="absolute top-5 right-5 rounded-full p-2 text-gray-500 hover:text-black hover:bg-black/5 transition"
+      >
+        <X size={20} />
+      </button>
 
-        <h2 className="text-2xl font-semibold text-center mb-6">
+      {/* Header */}
+      <div className="px-10 pt-10 text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900">
           Unlock Full Data
         </h2>
-
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Input
-              label="Name"
-              name="name"
-              placeholder="Enter your full name"
-              onChange={handleChange}
-            />
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Phone Number
-              </label>
-
-              <div ref={codeRef} className="relative flex">
-                {/* Selected country button */}
-                <button
-                  type="button"
-                  onClick={() => setShowCodeDropdown((v) => !v)}
-                  className="flex cursor-pointer items-center gap-2 px-3 pr-6 py-2 border rounded-l-lg bg-gray-50 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500"
-                >
-                  <img
-                    src={
-                      Object.values(countryCodes).find(
-                        (c) => c.code === countryCode
-                      )?.flag
-                    }
-                    alt=""
-                    className="w-6 h-4 rounded-sm"
-                    loading="lazy"
-                  />
-                  <span className="text-sm font-medium">{countryCode}</span>
-                </button>
-
-                {/* Phone input */}
-                <input
-                  type="tel"
-                  placeholder="Phone / WhatsApp number"
-                  onChange={(e) =>
-                    setForm({
-                      ...form,
-                      phone: `${countryCode} ${e.target.value}`,
-                    })
-                  }
-                  className="w-full border-t border-b border-r rounded-r-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none"
-                />
-
-                {/* Dropdown */}
-                {showCodeDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-28 bg-white border rounded-xl shadow-xl z-40">
-                    {/* Search */}
-                    <input
-                      type="text"
-                      placeholder="Search country or code"
-                      value={codeSearch}
-                      onChange={(e) => setCodeSearch(e.target.value)}
-                      className="w-full px-3 py-2 text-sm border-b outline-none"
-                      autoFocus
-                    />
-
-                    {/* List */}
-                    <div className="max-h-64 overflow-y-auto">
-                      {Object.entries(countryCodes)
-                        .filter(([name, data]) => {
-                          const q = codeSearch.toLowerCase();
-                          return (
-                            name.replace(/_/g, " ").toLowerCase().includes(q) ||
-                            data.code.includes(q)
-                          );
-                        })
-                        .map(([name, data]) => (
-                          <button
-                            key={name}
-                            type="button"
-                            onClick={() => {
-                              setCountryCode(data.code);
-                              setShowCodeDropdown(false);
-                              setCodeSearch("");
-                            }}
-                            className="w-full flex items-center cursor-pointer justify-start gap-3 px-3 py-2 hover:bg-blue-50 transition text-sm"
-                          >
-                            <img
-                              src={data.flag}
-                              alt=""
-                              className="w-7 h-5 rounded-sm"
-                              loading="lazy"
-                            />
-                            <span className="ml-auto font-medium text-gray-700">
-                              {data.code}
-                            </span>
-                          </button>
-                        ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-            <Input
-              label="Email ID"
-              name="email"
-              placeholder="Enter your email address"
-              onChange={handleChange}
-            />
-            <Input
-              label="Company Name"
-              name="company"
-              placeholder="Enter your company name"
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Message
-              </label>
-              <textarea
-                name="message"
-                placeholder="Briefly describe your enquiry"
-                onChange={handleChange}
-                className="w-full h-24 border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Data Requirements
-              </label>
-              <select
-                name="requirement"
-                onChange={handleChange}
-                className="w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none"
-              >
-                <option>Import</option>
-                <option>Export</option>
-                <option>Both</option>
-                <option>API</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="flex justify-center pt-4">
-            <button
-              type="submit"
-              disabled={loading}
-              className={`px-8 py-3 rounded-xl shadow transition flex items-center gap-2
-    ${
-      loading
-        ? "bg-blue-400 cursor-not-allowed"
-        : "bg-blue-600 hover:bg-blue-700 cursor-pointer"
-    }
-    text-white`}
-            >
-              {loading ? "Submitting..." : "✈ Submit"}
-            </button>
-          </div>
-        </form>
+        <p className="mt-2 text-sm text-gray-600">
+          Get instant access to verified trade intelligence
+        </p>
       </div>
+
+      {/* Form */}
+      <form onSubmit={handleSubmit} className="px-10 pb-10 pt-8 space-y-6">
+        {/* Top Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <Input
+            label="Name"
+            name="name"
+            placeholder="John Doe"
+            onChange={handleChange}
+          />
+
+          {/* Phone */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">
+              Phone Number
+            </label>
+
+            <div
+              ref={codeRef}
+              className="relative flex rounded-xl overflow-hidden bg-white shadow-sm border border-gray-200"
+            >
+              {/* Country */}
+              <button
+                type="button"
+                onClick={() => setShowCodeDropdown((v) => !v)}
+                className="flex items-center gap-2 px-4 bg-gray-50 hover:bg-gray-100 transition"
+              >
+                <img
+                  src={
+                    Object.values(countryCodes).find(
+                      (c) => c.code === countryCode
+                    )?.flag
+                  }
+                  alt=""
+                  className="w-6 h-4 rounded-sm"
+                  loading="lazy"
+                />
+                <span className="text-sm font-semibold">
+                  {countryCode}
+                </span>
+              </button>
+
+              {/* Input */}
+              <input
+                type="tel"
+                placeholder="Phone / WhatsApp number"
+                onChange={(e) =>
+                  setForm({
+                    ...form,
+                    phone: `${countryCode} ${e.target.value}`,
+                  })
+                }
+                className="flex-1 px-4 py-3 text-sm outline-none"
+              />
+
+              {/* Dropdown */}
+              {showCodeDropdown && (
+                <div className="absolute top-10 -left-2 mt-2 w-36 bg-white rounded-2xl shadow-2xl border z-40 overflow-hidden">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    value={codeSearch}
+                    onChange={(e) => setCodeSearch(e.target.value)}
+                    className="w-full px-4 py-2 text-sm border-b outline-none"
+                    autoFocus
+                  />
+
+                  <div className="max-h-60 overflow-y-auto">
+                    {Object.entries(countryCodes)
+                      .filter(([name, data]) => {
+                        const q = codeSearch.toLowerCase();
+                        return (
+                          name.replace(/_/g, " ").toLowerCase().includes(q) ||
+                          data.code.includes(q)
+                        );
+                      })
+                      .map(([name, data]) => (
+                        <button
+                          key={name}
+                          type="button"
+                          onClick={() => {
+                            setCountryCode(data.code);
+                            setShowCodeDropdown(false);
+                            setCodeSearch("");
+                          }}
+                          className="w-full flex items-center gap-3 px-4 py-2 hover:bg-blue-50 transition text-sm"
+                        >
+                          <img
+                            src={data.flag}
+                            alt=""
+                            className="w-7 h-5 rounded-sm"
+                            loading="lazy"
+                          />
+                          <span className="ml-auto font-semibold text-gray-700">
+                            {data.code}
+                          </span>
+                        </button>
+                      ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <Input
+            label="Email ID"
+            name="email"
+            placeholder="john@company.com"
+            onChange={handleChange}
+          />
+
+          <Input
+            label="Company Name"
+            name="company"
+            placeholder="Your company name"
+            onChange={handleChange}
+          />
+        </div>
+
+        {/* Bottom Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="md:col-span-2">
+            <label className="block text-sm font-medium mb-2 text-gray-700">
+              Message
+            </label>
+            <textarea
+              name="message"
+              placeholder="Briefly describe your enquiry"
+              onChange={handleChange}
+              className="w-full h-28 rounded-xl px-4 py-3 text-sm bg-white border border-gray-200 outline-none focus:ring-2 focus:ring-blue-400/40"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">
+              Data Requirements
+            </label>
+            <select
+              name="requirement"
+              onChange={handleChange}
+              className="w-full rounded-xl px-4 py-3 text-sm bg-white border border-gray-200 outline-none focus:ring-2 focus:ring-blue-400/40"
+            >
+              <option>Import</option>
+              <option>Export</option>
+              <option>Both</option>
+              <option>API</option>
+            </select>
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="flex justify-center pt-6">
+          <button
+            type="submit"
+            disabled={loading}
+            className={`px-12 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-2
+              ${
+                loading
+                  ? "bg-blue-300 cursor-not-allowed text-white"
+                  : "bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-400 text-white shadow-lg shadow-blue-500/30 hover:shadow-xl hover:scale-[1.03] active:scale-[0.97]"
+              }`}
+          >
+            {loading ? "Submitting..." : "✈ Submit"}
+          </button>
+        </div>
+      </form>
     </div>
-  );
+  </div>
+);
 }
 
 function Input({ label, ...props }) {
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-700 mb-1">
+      <label className="block text-sm font-medium mb-2 text-gray-700">
         {label}
       </label>
       <input
         {...props}
-        className="w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+        className="w-full rounded-xl px-4 py-3 text-sm bg-white border border-gray-200 outline-none transition focus:ring-2 focus:ring-blue-400/40"
       />
     </div>
   );
