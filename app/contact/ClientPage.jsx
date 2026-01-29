@@ -354,11 +354,12 @@ const page = () => {
 
       {/* Ahmedabad */}
       <div className="px-4 py-5 bg-blue-50 rounded-lg">
-        <h6 className="font-bold text-lg mb-1">Ahmedabad</h6>
+        <h5 className="font-bold text-lg mb-1">Ahmedabad</h5>
+        
+        <h6 className="font-semibold text-lg mb-1">Globebridge Tech Private Limited</h6>
         <p className="text-gray-700 text-sm">
-          Palladium Business Hub, 504–505,<br />
-          Mahavirnagar, Harikurpa Society,<br />
-          Motera, Ahmedabad, Gujarat 382424
+          902, Kalash Square,<br /> Sona Cross Road, Chandkheda,<br /> Ahmedabad, Ahmedabad, Gujarat, 382424
+          
         </p>
       </div>
 

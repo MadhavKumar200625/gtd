@@ -177,7 +177,7 @@ export default function InstantAssistanceModal({ open, onClose }) {
   const [showCodeDropdown, setShowCodeDropdown] = useState(false);
   const [codeSearch, setCodeSearch] = useState("");
   const [errors, setErrors] = useState({});
-const [apiError, setApiError] = useState("");
+  const [apiError, setApiError] = useState("");
 
 const validate = () => {
   const newErrors = {};
