@@ -356,10 +356,22 @@ const page = () => {
       <div className="px-4 py-5 bg-blue-50 rounded-lg">
         <h5 className="font-bold text-lg mb-1">Ahmedabad</h5>
         
-        <h6 className="font-semibold text-lg mb-1">Globebridge Tech Private Limited</h6>
+        <h6 className="font-semibold text-md mb-1">Globebridge Tech Private Limited</h6>
+        <h6 className="font-medium text-md mb-1">Head Office</h6>
+
         <p className="text-gray-700 text-sm">
           902, Kalash Square,<br /> Sona Cross Road, Chandkheda,<br /> Ahmedabad, Ahmedabad, Gujarat, 382424
           
+        </p>
+
+        
+      </div>
+
+      <div className="px-4 py-5 bg-blue-50 rounded-lg">
+        <h6 className="font-semibold text-lg mb-1 ">Sales Office</h6>
+
+        <p className="text-gray-700 text-sm">
+         PALLADIUM BUSINESS HUB, 504 -505,<br></br> Mahavirnagar, Harikurpa Society, Motera, Ahmedabad, Gujarat 382424
         </p>
       </div>
 
@@ -373,6 +385,7 @@ const page = () => {
       <div className="px-4 py-5 bg-green-50 rounded-lg">
         <h6 className="font-bold text-lg">Sales</h6>
         <p className="text-sm text-gray-700">
+          +91 9315619475<br/>
           +91 93287 93095<br />
           sale1@gtdservice.com<br />
           sale2@gtdservice.com
