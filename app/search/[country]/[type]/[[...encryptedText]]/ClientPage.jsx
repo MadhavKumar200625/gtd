@@ -74,7 +74,7 @@ const ClientPage = () => {
       //
       if(pair.startsWith("product-"))
       {
-        params["product"] = pair.replace("product-", "");
+        params["product"] = pair.replace("product-", "").replaceAll("-"," ");
       }
       if(pair.startsWith("hs-"))
         {

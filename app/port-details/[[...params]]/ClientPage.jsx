@@ -157,7 +157,7 @@ export default function ClientPage({ country, port }) {
                     </h2>
                     <div className="grid grid-cols-0 gap-8 md:grid-cols-2">
                         <div>
-                            <img src=".././images/Copy of GET-DETAILED-PORT-SHIPMENT-DATA.webp" className="w-full" alt="Total Buyers and Suppliers Data" title="Total Buyers and Suppliers Data" />
+                            <img src="/images/Copy of GET-DETAILED-PORT-SHIPMENT-DATA.webp" className="w-full" alt="Total Buyers and Suppliers Data" title="Total Buyers and Suppliers Data" />
                         </div>
                         <div>
                             <div className="grid grid-cols-2 gap-12 mt-8">
@@ -422,7 +422,7 @@ export default function ClientPage({ country, port }) {
                 <div className="container mx-auto px-4 md:px-0">
                     <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                         <div>
-                            <img src=".././images/Copy of PORT-OF-MANILA-TOTAL-BUYER-AND-SUPPLIER.webp" className="w-full" alt="Get Detailed Port Shipment Data" title="Get Detailed Port Shipment Data"/>
+                            <img src="/images/Copy of PORT-OF-MANILA-TOTAL-BUYER-AND-SUPPLIER.webp" className="w-full" alt="Get Detailed Port Shipment Data" title="Get Detailed Port Shipment Data"/>
                         </div>
                         <div>
                             <h2 className="mx-auto mb-2 text-4xl font-bold leading-snug my-2 text-white">

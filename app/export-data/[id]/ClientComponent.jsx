@@ -271,27 +271,27 @@ setChartKey(prev => prev + 1); // ✅ now donutData is already defined
   const sampleDta = [
     {
       name: "Covers 99 Chapters",
-      icons: ".././images/icons/HS_Code.png",
+      icons: "/images/icons/HS_Code.png",
     },
     {
       name: "US Export Data Country Wise",
-      icons: ".././images/icons/shipment.png",
+      icons: "/images/icons/shipment.png",
     },
     {
       name: "Historical US Export Data Year Wise",
-      icons: ".././images/icons/consignment.png",
+      icons: "/images/icons/consignment.png",
     },
     {
       name: "List Of Exporters In US",
-      icons: ".././images/icons/Items.png",
+      icons: "/images/icons/Items.png",
     },
     {
       name: "US Export Products List",
-      icons: ".././images/icons/import_data.png",
+      icons: "/images/icons/import_data.png",
     },
     {
       name: "US Ports Exports Data",
-      icons: ".././images/icons/Ports_Data.png",
+      icons: "/images/icons/Ports_Data.png",
     },
   ];
   var settings = {

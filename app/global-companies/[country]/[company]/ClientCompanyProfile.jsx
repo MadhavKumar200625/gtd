@@ -47,6 +47,10 @@ export default function ClientCompanyProfile({ country, company }) {
         getData();
     }, [company1, country]);
 
+
+
+  
+
     const handleToggle = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
@@ -80,8 +84,113 @@ export default function ClientCompanyProfile({ country, company }) {
     const total_buyers_count = buyers_count["Buyers"] || 0;
     const total_suppliers_count = suppliers_count["Suppliers"] || 0;
 
-    if (loading) return <div className="p-10 text-center text-xl">Loading...</div>;
+    const hasNoShipments =
+  total_export_shipment === 0 &&
+  total_import_shipment === 0;
 
+const hasNoProducts =
+  exportHSCodeList.length === 0 &&
+  importHSCodeList.length === 0;
+
+const hasNoPartners =
+  total_buyers_count === 0 &&
+  total_suppliers_count === 0;
+
+const isCompanyNotFound =
+  hasNoShipments && hasNoProducts && hasNoPartners;
+
+    if (loading) return <div className="p-10 text-center text-xl">Loading...</div>;
+if (isCompanyNotFound) {
+  return (
+    <>
+      <Breadcrump
+        pageName={company1.replace(/-/g, " ").toUpperCase()}
+        heading={company1.replace(/-/g, " ").toUpperCase()}
+      />
+
+      <section className="min-h-[70vh] flex items-center justify-center mybg">
+        <div className="container mx-auto px-4 md:px-0">
+          <div className="max-w-3xl mx-auto text-center bg-white shadow-2xl rounded-3xl p-8 md:p-12 border border-blue-100 relative overflow-hidden">
+
+            {/* Decorative gradient glow */}
+            <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-sky-400/20 rounded-full blur-3xl"></div>
+
+            {/* Icon */}
+            <div className="mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-900 to-sky-500 shadow-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-10 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={1.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 9v3.75m0 3h.008M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+
+            {/* Heading */}
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Company Data Not Available
+            </h1>
+
+            {/* Description */}
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              We currently do not have trade shipment data for
+              <span className="font-semibold text-gray-900">
+                {" "}
+                {company1.replace(/-/g, " ").toUpperCase()}
+              </span>{" "}
+              in{" "}
+              <span className="font-semibold text-gray-900">
+                {country.toUpperCase()}
+              </span>.
+            </p>
+
+            <p className="text-base text-gray-500 mb-8">
+              This may happen if the company has limited customs records,
+              operates under a different registered name, or data is still
+              being processed in our global trade database.
+            </p>
+
+            {/* Actions */}
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
+              <button
+                onClick={() => setShowUnlockForm(true)}
+                className="px-8 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-900 to-sky-500 shadow-lg hover:shadow-xl transition"
+              >
+                Request Data Access
+              </button>
+
+              <a
+                href="/pricing"
+                className="px-8 py-3 rounded-xl font-semibold text-blue-700 bg-blue-50 border border-blue-200 hover:bg-blue-100 transition"
+              >
+                Explore Available Reports
+              </a>
+            </div>
+
+            {/* Subtle footer */}
+            <p className="mt-8 text-sm text-gray-400">
+              GTD Solutions • Global Import Export Intelligence Platform
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <UnlockDataForm
+        isOpen={showUnlockForm}
+        onClose={() => setShowUnlockForm(false)}
+        country={country}
+      />
+    </>
+  );
+}
     return (
         <>
             <Breadcrump

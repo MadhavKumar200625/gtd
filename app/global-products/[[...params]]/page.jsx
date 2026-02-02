@@ -2,8 +2,9 @@
 
 import ClientPage from './ClientPage';
 
-export async function generateMetadata(context) {
-    console.log("Params:", context.params); // Check what it gives
+export async function generateMetadata({params}) {
+  params = await params
+    console.log("Params:", params); // Check what it gives
     return {
       title: "Directory of Import Export Products: Starting with Alphabet A - GTD Service",
       description: "Explore detailed information on Global Import-Export products from A to Z with GTD's comprehensive Directory of Global Import-Export Products.",
@@ -37,5 +38,6 @@ export async function generateMetadata(context) {
   
 
 export default function PageWrapper(props) {
+  
   return <ClientPage {...props} />;
 }

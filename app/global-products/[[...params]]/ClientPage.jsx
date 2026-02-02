@@ -145,7 +145,7 @@ const ClientPage = () => {
     const countrySlug = selectedCountry1.toLowerCase().replace(/\s+/g, "-");
     const typeSlug = urltype.toLowerCase();
 
-    const normalizedCode = code.toLowerCase(); // Convert to lowercase
+    const normalizedCode = code.toLowerCase().replaceAll(" ","-"); // Convert to lowercase
 
   const queryParams = new URLSearchParams();
   queryParams.set("product", normalizedCode); // Use lowercase
