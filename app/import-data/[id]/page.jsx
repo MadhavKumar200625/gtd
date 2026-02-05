@@ -873,7 +873,7 @@ export default async function Page({ params }) {
                 <li>Find verified Global buyers</li>
                 <li>Get quality business leads</li>
                 <li>Maximize Your Company ROI</li> */}
-                {meta.section7 ?? "Loading..."}
+                {meta && meta.section7 ? "Loading...":"notfound"}
               </ul>
               <div className="flex">
                 <a
