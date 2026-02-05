@@ -864,7 +864,7 @@ export default async function Page({ params }) {
               </h4>
               <h3 className="mx-auto mb-2 text-4xl font-bold leading-snug my-2 text-black">
                 {/* Extend your reach to the global market */}
-                {meta.section6 ?? "Loading..."}
+                {meta && meta.section6 ? "Loading...":"notfound"}
               </h3>
               <ul className="my-3 pt-3 list-inside list-disc">
                 {/* <li>Explore 200+ markets</li>
