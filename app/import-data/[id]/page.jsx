@@ -493,7 +493,7 @@ export default async function Page({ params }) {
                 and prepare an excellent global marketing strategy to outclass your competition.
               </p> */}
               <p className='text-base text-white mb-3'>
-              {meta.section5 ?? "Loading..."}
+              {meta && meta.section5 ? "Loading...":"not found"}
               </p>
               {/* Slider content */}
               <Slider items={sampleDta} />
