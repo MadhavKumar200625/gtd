@@ -506,7 +506,7 @@ export default async function Page({ params }) {
                 unit, price, country of origin-destination, importer name, exporter name, loading-unloading port, etc.
               </p> */}
               <p className='text-base text-white'>
-              {meta.section4 ?? "Loading..."}
+              {meta && meta.section4 ? "Loading...":"not found"}
               </p>
               <div className="flex mt-5 gap-3">
                 <a
