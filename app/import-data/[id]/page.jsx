@@ -206,7 +206,7 @@ export default async function Page({ params }) {
           </nav>
           <h1 className="my-4 text-3xl font-bold tracking-tight leading-none text-dark md:text-3xl lg:text-4xl">
             {/* Find the Latest {`${country}`} Import Customs Shipment Trade Data */}
-            {meta.section1 ?? "Loading..."}
+            {meta.section1 ? "Loading...":"not found"}
           </h1>
           <p className="mb-2 text-justify text-base font-normal text-dark">
             {`${country}`}'s import data shows that, overall, {`${country}`}'s imports declined this year.
