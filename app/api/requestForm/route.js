@@ -12,7 +12,8 @@ export async function POST(req) {
       country,
       message,
       requestType,
-      submissionReason
+      submissionReason,
+      profileUrl
     } = await req.json();
 
 
@@ -54,6 +55,7 @@ export async function POST(req) {
         <p><strong>Request Type:</strong> ${requestType}</p>
         <p><strong>Submission Reason:</strong> ${submissionReason}</p>
         <p><strong>Message:</strong><br>${message || 'No additional message'}</p>
+        <p><b>URL Context:</b> ${profileUrl}</p>
       `,
     };
 

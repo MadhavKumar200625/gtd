@@ -81,6 +81,7 @@ export default function RemoveRequestForm() {
       setLoading(true);
       const res = await axios.post('/api/requestForm', {
         ...formData,
+        profileUrl: `company-profile-removal-request/${params.country}/${params.company}`,
         confirmations
       });
 
