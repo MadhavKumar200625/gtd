@@ -13,8 +13,11 @@ export async function POST(req) {
       message,
       requestType,
       submissionReason,
+      confirmations,
       profileUrl
     } = await req.json();
+
+    
 
 
     if (!name || !email || !company || !phone || !website || !country) {
@@ -45,16 +48,37 @@ export async function POST(req) {
       to: "support@gtdservice.com",
       subject: "Enquiry GTD Service",
       html: `
-        <h2>Sample Data Request</h2>
-        <p><strong>Company:</strong> ${company}</p>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Country:</strong> ${country}</p>
-        <p><strong>Website:</strong> ${website}</p>
-        <p><strong>Request Type:</strong> ${requestType}</p>
-        <p><strong>Submission Reason:</strong> ${submissionReason}</p>
-        <p><strong>Message:</strong><br>${message || 'No additional message'}</p>
+        <h2>Company Profile Removal Request</h2>
+
+<p><strong>Company:</strong> ${company || "-"}</p>
+<p><strong>Name:</strong> ${name || "-"}</p>
+<p><strong>Email:</strong> ${email || "-"}</p>
+<p><strong>Phone:</strong> ${phone || "-"}</p>
+<p><strong>Country (User Selected):</strong> ${country || "-"}</p>
+<p><strong>Website:</strong> ${website || "-"}</p>
+
+<hr/>
+
+<p><strong>Request Type (Submitted As):</strong> ${requestType || "-"}</p>
+<p><strong>Submission Reason:</strong> ${submissionReason || "-"}</p>
+
+<p><strong>Message:</strong><br/>
+${message || "No additional message"}
+</p>
+
+<hr/>
+
+
+<hr/>
+
+<h3>Confirmations</h3>
+<p><strong>Accuracy Confirmed:</strong> ${confirmations?.accuracy ? "Yes" : "No"}</p>
+<p><strong>Irreversible Action Acknowledged:</strong> ${confirmations?.irreversible ? "Yes" : "No"}</p>
+<p><strong>Validation Confirmed:</strong> ${confirmations?.validation ? "Yes" : "No"}</p>
+
+<hr/>
+
+
         <p><b>URL Context:</b> ${profileUrl}</p>
       `,
     };
