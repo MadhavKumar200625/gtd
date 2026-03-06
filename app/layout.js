@@ -95,8 +95,11 @@ export default function RootLayout({ children }) {
         <Header />
  <AllPageForm></AllPageForm>
         {children}
-        
-        <Footer />
+{/* <iframe
+  src="https://gtt-smartbot-frontend.vercel.app/widget"
+  className="fixed inset-0 w-screen h-screen border-0 z-[9999] pointer-events-auto"
+/>        */}
+ <Footer />
       </body>
     </html>
   );

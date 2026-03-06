@@ -1,7 +1,16 @@
 // File: app/global-companies-list/[[...params]]/page.jsx
 
 import ClientPage from './ClientPage';
+const baseUrl = "https://gtdservice.com";
 
+export function generateCanonical(paramsArray = []) {
+  const cleanParams = paramsArray.filter(Boolean); // remove undefined/null
+  const path = cleanParams.length
+    ? `/global-products/${cleanParams.join("/")}/`
+    : `/global-products/`;
+
+  return `${baseUrl}${path}`;
+}
 export async function generateMetadata({params}) {
   params = await params
     console.log("Params:", params); // Check what it gives
@@ -10,7 +19,7 @@ export async function generateMetadata({params}) {
       description: "Explore detailed information on Global Import-Export products from A to Z with GTD's comprehensive Directory of Global Import-Export Products.",
       keywords: "Global import-export directory, Import export products A to Z, GTD import-export guide, International trade products, Global trade directory, Directory of global import export products, Import export product list A to Z, GTD international trade database, Alphabetical list of export items, Import export product information, Global trade data",
       alternates: {
-        canonical: `https://gtdservice.com/global-products`,
+        canonical: generateCanonical(params.params || []),
       },
       openGraph: {
           title: 'Directory of Import Export Products: Starting with Alphabet A - GTD Service',

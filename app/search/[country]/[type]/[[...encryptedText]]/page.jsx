@@ -599,8 +599,22 @@ export async function generateMetadata({ params }) {
 //         }
 //     }
 
-const url = `https://gtdservice.com/search/${lowerCountry}/${type}/${product}/${hscode}/${port}/${countryin}`;
-;
+const baseUrl = "https://gtdservice.com";
+
+const segments = [
+  lowerCountry,
+  type,
+  product,
+  hscode,
+  port,
+  countryin,
+].filter(Boolean); // removes undefined, null, ""
+
+const url = segments.length
+  ? `${baseUrl}/search/${segments.join("/")}/`
+  : `${baseUrl}/search/`;
+
+
 
   return {
     title,
