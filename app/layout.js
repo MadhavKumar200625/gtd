@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
+import GtdChatBot from "@/components/GtdChatBot";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Script from "next/script";
@@ -95,10 +96,7 @@ export default function RootLayout({ children }) {
         <Header />
  <AllPageForm></AllPageForm>
         {children}
-{/* <iframe
-  src="https://gtt-smartbot-frontend.vercel.app/widget"
-  className="fixed inset-0 w-screen h-screen border-0 z-[9999] pointer-events-auto"
-/>        */}
+<GtdChatBot></GtdChatBot> 
  <Footer />
       </body>
     </html>
