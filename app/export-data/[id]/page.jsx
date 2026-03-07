@@ -2,7 +2,8 @@ import ClientComponent from './ClientComponent';
 import { getPageMeta_export } from '@/lib/api';
 
 export async function generateMetadata({ params }) {
-  const { id } = await params;
+  let { id } = await params;
+  id = decodeURIComponent(id);
 
   let id_a = '';
   if (id && id.length > 3) {
@@ -63,5 +64,6 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   params = await params
+  params.id = decodeURIComponent(params.id);
   return <ClientComponent id={params.id}  />;
 }
