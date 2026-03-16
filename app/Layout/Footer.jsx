@@ -553,7 +553,7 @@ const Footer = () => {
                 </a>
                 <a
                   target="_blank"
-                  href="#"
+                  href="https://www.linkedin.com/company/gtd-solutions-llc/?viewAsMember=true"
                   className="flex items-center justify-center w-10 h-10 border hover:bg-emerald-400 border-gray-300 rounded-full hover:border-0 hover:-translate-y-2 group transition-all ease-linear"
                 >
                   <img
