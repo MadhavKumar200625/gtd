@@ -7,6 +7,7 @@ const config = {
   password: process.env.DB_PASSWORD,
   server: process.env.DB_SERVER,      // e.g., 'localhost' or an IP
   database: process.env.DB_DATABASE1,
+  port: 8005,
   options: {
     encrypt: true, // for Azure; set false if using local dev
     trustServerCertificate: true, // required if local dev and no SSL
