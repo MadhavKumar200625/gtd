@@ -1,16 +1,32 @@
 import ClientComponent from './ClientComponent';
 import { getPageMeta_export } from '@/lib/api';
 
+
+function normalizeCountry(id) {
+  if (!id) return '';
+
+  return id
+    .toLowerCase()
+    .replace(/%e2%80%99/g, '') // encoded apostrophe
+    .replace(/'/g, '')         // remove '
+    .replace(/\s+/g, '-')      // spaces → dash
+    .trim();
+}
 export async function generateMetadata({ params }) {
   let { id } = await params;
-  id = decodeURIComponent(id);
+id = decodeURIComponent(id);
 
-  let id_a = '';
-  if (id && id.length > 3) {
-    id_a = id.charAt(0).toUpperCase() + id.slice(1);
-  }
+const normalized = normalizeCountry(id);   // ✅ important
 
-  const meta = await getPageMeta_export(id);
+let id_a = '';
+if (normalized && normalized.length > 3) {
+  id_a = normalized
+    .split('-')
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+}
+
+const meta = await getPageMeta_export(normalized);
 
   const title = meta?.meta_title || `${id_a} - Export Data | ${id_a} Shipment Data Online - GTD Service`;
   const description = meta?.meta_description || `We have 100% authentic details based on ${id_a} export customs data and shipment data. You can opt for online and offline or customized plans at a reasonable price.`;
@@ -19,16 +35,16 @@ export async function generateMetadata({ params }) {
   //const title = `${id_a} - Export Data | ${id_a} Shipment Data Online - GTD Service`;
   //const description = `We have 100% authentic details based on ${id_a} export customs data and shipment data. You can opt for online and offline or customized plans at a reasonable price.`;
   const keywords = [
-    `${id} export products`,
-    `${id} export data`,
-    `${id} customs shipment data`,
-    `${id} trade statistics 2025`,
-    `${id} trade intelligence`,
-    `${id} exporters list`,
-    `${id} HS code data`,
-    `${id} export statistics`,
-    `${id} port export data`,
-    `${id} export partners`,
+    `${normalized} export products`,
+    `${normalized} export data`,
+    `${normalized} customs shipment data`,
+    `${normalized} trade statistics 2025`,
+    `${normalized} trade intelligence`,
+    `${normalized} exporters list`,
+    `${normalized} HS code data`,
+    `${normalized} export statistics`,
+    `${normalized} port export data`,
+    `${normalized} export partners`,
   ];
 
   return {
@@ -36,12 +52,12 @@ export async function generateMetadata({ params }) {
     description,
     keywords,
     alternates: {
-      canonical: `https://gtdservice.com/export-data/${id}`,
+      canonical: `https://gtdservice.com/export-data/${normalized}`,
     },
     openGraph: {
       title : `${id_a} - Export Data | ${id_a} Shipment Data Online - GTD Service`,
       description : `We have 100% authentic details based on ${id_a} export customs data and shipment data. You can opt for online and offline or customized plans at a reasonable price.`,
-      url: `https://gtdservice.com/export-data/${id}`,
+      url: `https://gtdservice.com/export-data/${normalized}`,
       siteName: 'GTD Service',
         type: 'website',
         images: [
@@ -63,7 +79,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
-  params = await params
-  params.id = decodeURIComponent(params.id);
-  return <ClientComponent id={params.id}  />;
+params = await params;
+const raw = decodeURIComponent(params.id);
+const normalized = normalizeCountry(raw);
+
+return <ClientComponent id={normalized} />;
 }
