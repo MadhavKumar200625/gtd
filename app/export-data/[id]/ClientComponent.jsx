@@ -206,7 +206,7 @@ const partnersWithPercent = top10Partners.map(item => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`./api/getData?country=${encodeURIComponent(country)}`);
+      const res = await fetch(`./api/getData?country=${id}`);
 
       const json = await res.json();
       const barCategories = json.table3.map(item => item.name);
