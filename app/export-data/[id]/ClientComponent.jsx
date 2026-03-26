@@ -380,8 +380,8 @@ setChartKey(prev => prev + 1); // ✅ now donutData is already defined
             </ol>
           </nav>
           <h1 className="my-4 text-3xl font-bold tracking-tight leading-none text-dark md:text-3xl lg:text-4xl">
-            {/* Find the Latest {`${country}`} Export Customs Shipment Trade Data */}
-            {data1?.table1?.[0]?.section1 ?? "Loading data..."}
+            Find the Latest {`${country}`} Export Customs Shipment Trade Data
+            {/* {data1?.table1?.[0]?.section1 ?? "Loading data..."} */}
           </h1>
           <p className="mb-2 text-justify text-base font-normal text-dark">
             {`${country}`}'s export data depicts rapid growth in the country's overall exports this past year.
