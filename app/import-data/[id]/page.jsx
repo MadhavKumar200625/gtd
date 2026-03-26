@@ -14,8 +14,8 @@ export async function generateMetadata({ params }) {
   id = decodeURIComponent(id);
   const countryName = formatCountryName(id);
 
-  const meta = await getPageMeta_import(id);
-  
+const normalized = normalizeCountry(id);
+const meta = await getPageMeta_import(normalized);  
     const title = meta?.meta_title || `${countryName} - Import Data | ${countryName} Trade Data Online - GTD Service`;
     const description = meta?.meta_description || `We provide both online and offline ${countryName} import data access to our customers.`;
   
@@ -56,7 +56,13 @@ function formatCountryName(id) {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(' ');
 }
-
+function normalizeCountry(id) {
+  return id
+    .toLowerCase()
+    .replace(/%e2%80%99/g, "") // encoded apostrophe
+    .replace(/'/g, "")         // remove apostrophe
+    .replace(/\s+/g, "-");     // spaces → dash
+}
 function parseValue(value) {
   if (typeof value === 'string') {
     const upperValue = value.toUpperCase().trim();
@@ -73,9 +79,12 @@ function parseValue(value) {
 export default async function Page({ params }) {
   params = await params
   params.id = decodeURIComponent(params.id);
-  const country = formatCountryName(params.id);
-  const data = await fetchCountryData(country);
-  const meta = await getPageMeta_import(country);
+  
+const normalized = normalizeCountry(params.id);  // ✅ FIX
+const country = formatCountryName(normalized);
+
+const data = await fetchCountryData(normalized);
+const meta = await getPageMeta_import(normalized);
   function parseValue(value) {
     if (!value) return 0;
     const upperValue = value.toUpperCase().trim();
