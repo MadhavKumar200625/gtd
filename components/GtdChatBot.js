@@ -31,7 +31,7 @@ export default function GTTChatbotWidget() {
   return (
     <iframe
       ref={iframeRef}
-      src="https://gtt-smartbot-frontend.vercel.app/widget?key=f3q3bemm"
+      src="https://bot.gtdservice.com/widget?key=f3q3bemm"
       style={{
         position: "fixed",
         bottom: 0,
