@@ -3,11 +3,11 @@ import React from "react";
 
 const page = () => {
   const country = [
-    {
-      countryName: "india",
-      pageURL: "/india-import-export-data",
-      flag: "in",
-    },
+    // {
+    //   countryName: "india",
+    //   pageURL: "/india-import-export-data",
+    //   flag: "in",
+    // },
     {
       countryName: "china",
       pageURL: "#",

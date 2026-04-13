@@ -206,11 +206,11 @@ const ClientPage = () => {
   
   
     const country = [
-      {
-        countryName: "india",
-        pageURL: "/india-import-export-data",
-        flag: "in",
-      },
+      // {
+      //   countryName: "india",
+      //   pageURL: "/india-import-export-data",
+      //   flag: "in",
+      // },
       {
         countryName: "china",
         pageURL: "#",

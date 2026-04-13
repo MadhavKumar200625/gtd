@@ -35,11 +35,11 @@ const ClientPage = () => {
   const [currentLetter, setCurrentLetter] = useState(urlLetter);
 
   const country = [
-    {
-      countryName: "india",
-      pageURL: "/india-import-export-data",
-      flag: "in",
-    },
+    // {
+    //   countryName: "india",
+    //   pageURL: "/india-import-export-data",
+    //   flag: "in",
+    // },
     {
       countryName: "bangladesh",
       pageURL: "#",

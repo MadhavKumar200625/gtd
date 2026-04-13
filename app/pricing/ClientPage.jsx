@@ -1090,12 +1090,12 @@ const page = () => {
               <div className="p-3 border bg-gradient-to-br from-indigo-50 to-pink-50 via-blue-50 rounded-xl mb-4 md:mb-0">
                   <h6 className="uppercase text-lg font-semibold">Asia</h6>
                   <ul className="mt-3">
-                    <li className="flex items-center gap-2 mb-1">
+                    {/* <li className="flex items-center gap-2 mb-1">
                       <div className="block">
                         <span className="fi fi-in block text-xl rounded-md"></span>
                       </div>
                       <p>India</p>
-                    </li>
+                    </li> */}
                     <li className="flex items-center gap-2 mb-1">
                       <div className="block">
                         <span className="fi fi-cn block text-xl rounded-md"></span>
