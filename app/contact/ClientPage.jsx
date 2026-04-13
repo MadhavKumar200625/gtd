@@ -343,14 +343,14 @@ const page = () => {
     <div className="space-y-3">
 
       {/* Noida */}
-      <div className="px-4 py-5 bg-blue-50 rounded-lg">
+      {/* <div className="px-4 py-5 bg-blue-50 rounded-lg">
         <h6 className="font-bold text-lg mb-1">Noida</h6>
         <p className="text-gray-700 text-sm">
           G-232, Sector-63,<br />
           Noida, Uttar Pradesh – 201301,<br />
           India
         </p>
-      </div>
+      </div> */}
 
       {/* Ahmedabad */}
       <div className="px-4 py-5 bg-blue-50 rounded-lg">

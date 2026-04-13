@@ -1,12 +1,12 @@
 export const country = [
-  {
-    countryName: "india",
-    detail:
-      "Identify growth opportunities in the Indian market with our accurate India customs data based on Global trade data shipments reported by other countries. Find top products shipments, trading companies, ports with total import value from our result centric India Import Export Database. Plan a profitable marketing strategy based on India Trade Data 2021-22.",
-    imgSRC: "/images/tajmahal.png",
-    pageURL: "",
-    flag: "in",
-  },
+  // {
+  //   countryName: "india",
+  //   detail:
+  //     "Identify growth opportunities in the Indian market with our accurate India customs data based on Global trade data shipments reported by other countries. Find top products shipments, trading companies, ports with total import value from our result centric India Import Export Database. Plan a profitable marketing strategy based on India Trade Data 2021-22.",
+  //   imgSRC: "/images/tajmahal.png",
+  //   pageURL: "",
+  //   flag: "in",
+  // },
   {
     countryName: "china",
     detail: `Access the verified China import export data year-wise with GTD Service GTIS. GTD Service Global Trade Intelligence System helps you find China's major imports, exports, trading countries, and top China import export companies based on China customs data. Gain a competitive with valuable insights into the Chinese market with our impressive China trade data 2021-22 and enhance your business sales.`,
