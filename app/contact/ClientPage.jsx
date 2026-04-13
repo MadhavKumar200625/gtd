@@ -353,7 +353,7 @@ const page = () => {
       </div> */}
 
       {/* Ahmedabad */}
-      <div className="px-4 py-5 bg-blue-50 rounded-lg">
+      {/* <div className="px-4 py-5 bg-blue-50 rounded-lg">
         <h5 className="font-bold text-lg mb-1">Ahmedabad</h5>
         
         <h6 className="font-semibold text-md mb-1">Globebridge Tech Private Limited</h6>
@@ -365,15 +365,15 @@ const page = () => {
         </p>
 
         
-      </div>
+      </div> */}
 
-      <div className="px-4 py-5 bg-blue-50 rounded-lg">
+      {/* <div className="px-4 py-5 bg-blue-50 rounded-lg">
         <h6 className="font-semibold text-lg mb-1 ">Sales Office</h6>
 
         <p className="text-gray-700 text-sm">
          PALLADIUM BUSINESS HUB, 504 -505,<br></br> Mahavirnagar, Harikurpa Society, Motera, Ahmedabad, Gujarat 382424
         </p>
-      </div>
+      </div> */}
 
       
 
@@ -382,7 +382,7 @@ const page = () => {
     {/* ===== RIGHT COLUMN ===== */}
     <div className="space-y-3">
 
-      <div className="px-4 py-5 bg-green-50 rounded-lg">
+      {/* <div className="px-4 py-5 bg-green-50 rounded-lg">
         <h6 className="font-bold text-lg">Sales</h6>
         <p className="text-sm text-gray-700">
           
@@ -390,23 +390,23 @@ const page = () => {
           sale1@gtdservice.com<br />
           sale2@gtdservice.com
         </p>
-      </div>
-
+      </div> */}
+{/* 
       <div className="px-4 py-5 bg-yellow-50 rounded-lg">
         <h6 className="font-bold text-lg">Support</h6>
         <p className="text-sm text-gray-700">
           +91 9315619475<br/>
           support@gtdservice.com
         </p>
-      </div>
+      </div> */}
 
-      <div className="px-4 py-5 bg-indigo-50 rounded-lg">
+      {/* <div className="px-4 py-5 bg-indigo-50 rounded-lg">
         <h6 className="font-bold text-lg">Other Queries</h6>
         <p className="text-sm text-gray-700">
           +91 9315619475<br/>
           info@gtdservice.com
         </p>
-      </div>
+      </div> */}
 
     </div>
 
