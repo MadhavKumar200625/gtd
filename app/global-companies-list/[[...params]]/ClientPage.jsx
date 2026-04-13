@@ -21,7 +21,7 @@ const ClientPage = () => {
   
     // Extract only the first 3 params we need (country, letter, page)
     const paramArray = params?.params?.slice(0, 3) || [];
-    const urlCountry = paramArray[0]?.toLowerCase() || "india";
+    const urlCountry = paramArray[0]?.toLowerCase() || "vietnam";
     //const urlPage = parseInt(paramArray[2] || "1") || 1;
     const urlLetter1 = paramArray[1]?.toUpperCase() || "a-1";
     const parts = urlLetter1.split('-');
@@ -87,7 +87,7 @@ const ClientPage = () => {
       { CountryName: "Guinea", countryFlag: "gn" },
       { CountryName: "Guyana", countryFlag: "gy" },
       { CountryName: "Hungary", countryFlag: "hu" },
-      { CountryName: "India", countryFlag: "in" },
+
       { CountryName: "Indonesia", countryFlag: "id" },
       { CountryName: "Iran", countryFlag: "ir" },
       { CountryName: "Iraq", countryFlag: "iq" },

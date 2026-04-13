@@ -20,7 +20,7 @@ const ClientPage = () => {
 
   // Extract only the first 3 params we need (country, letter, page)
   const paramArray = params?.params?.slice(0, 3) || [];
-  const urlCountry = paramArray[0]?.toLowerCase() || "india";
+  const urlCountry = paramArray[0]?.toLowerCase() || "vietnam";
   const urltype = paramArray[1]?.toLowerCase() || "import";
   const urlLetter1 = paramArray[2]?.toUpperCase() || "a-1";
   const parts = urlLetter1.split('-');
@@ -287,7 +287,7 @@ const ClientPage = () => {
           >
             <option value="0">Select Country</option>
             <option value="Bangladesh">Bangladesh</option>
-            <option value="India">India</option>
+            {/*  */}
             <option value="Brazil">Brazil</option>
             <option value="Indonesia">Indonesia</option>
             <option value="Mexico">Mexico</option>

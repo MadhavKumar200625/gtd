@@ -1,9 +1,9 @@
 export const portShipmentData = [
-    {
-      country: 'India',
-      code: 'in',
-      ports: ['Nhava Sheva', 'Mundra', 'Kolkata', 'Chennai', 'Visakhapatnam']
-    },
+    // {
+    //   country: 'India',
+    //   code: 'in',
+    //   ports: ['Nhava Sheva', 'Mundra', 'Kolkata', 'Chennai', 'Visakhapatnam']
+    // },
     {
       country: 'USA',
       code: 'us',

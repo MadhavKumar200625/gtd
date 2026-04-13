@@ -579,7 +579,7 @@ const Modal = ({ openModal, setOpenModal, plan }) => {
                                     <option value="Hong Kong">Hong Kong</option>
                                     <option value="Hungary">Hungary</option>
                                     <option value="Iceland">Iceland</option>
-                                    <option value="India">India</option>
+                                    
                                     <option value="Indonesia">Indonesia</option>
                                     <option value="Iran">Iran (Islamic Republic of)</option>
                                     <option value="Iraq">Iraq</option>

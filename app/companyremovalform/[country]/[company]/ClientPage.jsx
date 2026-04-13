@@ -237,7 +237,7 @@ export default function RemoveRequestForm() {
                             onChange={handleChange}
                             className="shadow-sm bg-gray-50 mb-3 md:mb-0 border focus:outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                                 <option value="">Select country...</option>
-                                 <option value="India">India</option>
+                                 
                 <option value="United States">United States</option>
                 <option value="United Kingdom">United Kingdom</option>
                                 <option value="Afghanistan">Afghanistan</option>
@@ -340,7 +340,7 @@ export default function RemoveRequestForm() {
                                     <option value="Hong Kong">Hong Kong</option>
                                     <option value="Hungary">Hungary</option>
                                     <option value="Iceland">Iceland</option>
-                                    <option value="India">India</option>
+                                    
                                     <option value="Indonesia">Indonesia</option>
                                     <option value="Iran">Iran (Islamic Republic of)</option>
                                     <option value="Iraq">Iraq</option>

@@ -51,7 +51,7 @@ export const countries = [
     { CountryName: "Guinea", countryFlag: "gn" },
     { CountryName: "Guyana", countryFlag: "gy" },
     { CountryName: "Hungary", countryFlag: "hu" },
-    { CountryName: "India", countryFlag: "in" },
+
     { CountryName: "Indonesia", countryFlag: "id" },
     { CountryName: "Iran", countryFlag: "ir" },
     { CountryName: "Iraq", countryFlag: "iq" },

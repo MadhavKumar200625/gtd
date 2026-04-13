@@ -646,14 +646,14 @@ const Asia = () => {
       exportURL: "",
       flag: "hk",
     },
-    {
-      countryName: "India",
-      countryURL: "",
-      importURL: "",
-      exportURL: "",
-      flag: "in",
+    // {
+    //   countryName: "India",
+    //   countryURL: "",
+    //   importURL: "",
+    //   exportURL: "",
+    //   flag: "in",
       
-    },
+    // },
     {
       countryName: "Indonesia",
       countryURL: "",

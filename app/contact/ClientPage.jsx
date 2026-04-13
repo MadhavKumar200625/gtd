@@ -183,7 +183,7 @@ const page = () => {
                 >
                   <option value="0">Select Country</option>
                   <option value="Bangladesh">Bangladesh</option>
-                  <option value="India">India</option>
+                  
                   <option value="Brazil">Brazil</option>
                   <option value="Indonesia">Indonesia</option>
                   <option value="Mexico">Mexico</option>
@@ -333,9 +333,9 @@ const page = () => {
 
       {/* ================= INDIA OFFICE ================= */}
       <div>
-  <h3 className="mb-3 text-2xl font-bold tracking-normal">
+  {/* <h3 className="mb-3 text-2xl font-bold tracking-normal">
     India Office
-  </h3>
+  </h3> */}
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
@@ -382,31 +382,31 @@ const page = () => {
     {/* ===== RIGHT COLUMN ===== */}
     <div className="space-y-3">
 
-      {/* <div className="px-4 py-5 bg-green-50 rounded-lg">
+      <div className="px-4 py-5 bg-green-50 rounded-lg">
         <h6 className="font-bold text-lg">Sales</h6>
         <p className="text-sm text-gray-700">
           
-          +91 93287 93095<br />
+          {/* +91 93287 93095<br /> */}
           sale1@gtdservice.com<br />
           sale2@gtdservice.com
         </p>
-      </div> */}
-{/* 
+      </div>
+
       <div className="px-4 py-5 bg-yellow-50 rounded-lg">
         <h6 className="font-bold text-lg">Support</h6>
         <p className="text-sm text-gray-700">
-          +91 9315619475<br/>
+          {/* +91 9315619475<br/> */}
           support@gtdservice.com
         </p>
-      </div> */}
+      </div>
 
-      {/* <div className="px-4 py-5 bg-indigo-50 rounded-lg">
+      <div className="px-4 py-5 bg-indigo-50 rounded-lg">
         <h6 className="font-bold text-lg">Other Queries</h6>
         <p className="text-sm text-gray-700">
-          +91 9315619475<br/>
+          {/* +91 9315619475<br/> */}
           info@gtdservice.com
         </p>
-      </div> */}
+      </div>
 
     </div>
 
