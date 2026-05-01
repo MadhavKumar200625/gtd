@@ -37,7 +37,32 @@ export const metadata = {
 const page = () => {
   return (
     <>
+<script type="application/ld+json">
+          {`
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://gtdservice.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "item": "https://gtdservice.com/about"
+    }
+  ]
+}
 
+
+
+
+`}
+        </script>
       <Breadcrump
         pageName="About Us"
         heading="About Us"
